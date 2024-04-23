@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapi-auth-with-grc"
+version = "0.1.0"
+description = ""
+authors = ["AlekseyLebedik <lebedik.leha@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+grpcio = "^1.62.2"
+grpcio-tools = "^1.62.2"
+fastapi = "^0.110.1"
+python-multipart = "^0.0.9"
+uvicorn = "^0.29.0"
+requests = "^2.31.0"
+protobuf = "4.21.6"
+pydantic = "^2.7.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.29"}
+alembic = "^1.13.1"
+pydantic-settings = "^2.2.1"
+asyncpg = "^0.29.0"
+pendulum = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
