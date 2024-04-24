@@ -1,0 +1,59 @@
+syntax="proto3";
+import "google/protobuf/timestamp.proto";
+
+
+service UserService {
+    rpc CreateUser(CreateUserRequest) returns UserResponse;
+    rpc UpdateUser(UpdateUserRequest) returns UserResponse;
+    rpc DeleteUser(DeleteUserRequest) returns bool;
+}
+
+enum ROLES {
+    ROLE_PORTAL_USER = 1;
+    ROLE_PORTAL_ADMIN = 2;
+    ROLE_PORTAL_SUPERADMIN = 3;
+}
+
+message UserMessage {
+    oneof user_variant {
+        string email = 1;
+        string phone = 2;
+    };
+    string name = 3;
+    string surname = 4;
+    optional google.protobuf.Timestamp updated_account = 6;
+    bytes avatar = 7;
+    repeated ROLES roles = 8;
+}
+
+message OptionalUserMessage {
+    optional string name = 1;
+    optional string surname = 2;
+    optional bytes avatar = 3;
+}
+
+message CreateUserRequest {
+    UserMessage user = 1;
+}
+
+message UserResponse {
+    UserMessage user = 1;
+}
+
+message UpdateUserRequest {
+    OptionalUserMessage user = 1;
+}
+
+
+message DeleteUserRequest {
+    oneof user_variant {
+        string email = 1;
+        string phone = 2;
+    };
+    oneof token_variant {
+        string access_token = 3;
+        string phone_token = 4;
+    }
+}
+
+

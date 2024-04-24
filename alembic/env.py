@@ -3,8 +3,9 @@ from logging.config import fileConfig
 
 from alembic import context
 from core.db.models import Base
-from core.models.session import EmailSession, PhoneSession
-from core.models.user import UserWithEmail, UserWithPhone
+from core.models.session import *
+from core.models.user import *
+from core.models.user_meta import *
 from settings import settings
 from sqlalchemy import pool
 from sqlalchemy.engine import Connection
