@@ -10,6 +10,9 @@ class Settings(BaseSettings):
     DB_PORT: int
     DB_HOST: str
     EXPIRE_MINUTES: int
+    HOST_GRPC: str
+    USER_PORT_GRPC: int
+    SESSION_PORT_GRPC: int
 
     @property
     def DATABASE_URL_async(self):

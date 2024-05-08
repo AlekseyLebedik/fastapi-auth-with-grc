@@ -1,8 +1,9 @@
-from typing import Optional
+from typing import List, Optional
 
 from core.db.models import Base
-from core.utils.dump_to_dict import dumpToDict
-from sqlalchemy import Boolean, Column, DateTime, Integer, String
+from core.models.user import *
+from core.utils import _print, dumpToDict
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.orm import relationship
 
@@ -24,16 +25,20 @@ class UserMeta(Base):
     fname = Column(String)
     lname = Column(String)
     email = Column(String, unique=True, nullable=True)
-    phone = Column(String, unique=True, nullable=True)
+    phone = Column(String(40), unique=True, nullable=True)
+    br_date = Column(DateTime, nullable=True)
     document_id = Column(String, nullable=True, unique=True)
     document_photo_links = Column(ARRAY(String), nullable=True)
     avatar = Column(String, nullable=True)
     nationality = Column(String, nullable=True)
-    mac_ids = Column(ARRAY(String), nullable=True)
+    mac_ids = Column(ARRAY(String(30)), nullable=True)
     is_verify = Column(Boolean, default=False)
     verify_date = Column(DateTime, nullable=True)
+    user_id = Column(Integer, ForeignKey("users.user_id"), unique=True)
     user = relationship(
-        "UserModel", cascade="all, delete-orphan", back_populates="meta"
+        "UserModel",
+        back_populates="meta",
+        lazy="joined",
     )
 
     def __repr__(self):
@@ -41,26 +46,31 @@ class UserMeta(Base):
 
     @property
     def get_private_meta(self):
-        return {
-            "document_id": self.document_id,
-            "document_photo_links": self.document_photo_links,
-            "mac_ids": self.mac_ids,
-            "nationality": self.nationality,
-        }
+        return [
+            "document_photo_links",
+            "mac_ids",
+            "nationality",
+            "br_date",
+        ]
 
-    def __iter__(self):
-        return {
-            "id": self.id,
-            "is_verify": self.is_verify,
-            "fname": self.fname,
-            "lname": self.lname,
-            "email": self.email,
-            "phone": self.phone,
-            "avatar": self.avatar,
-            "verify_date": self.verify_date,
-        }
-
-    def dump_to_dict(self, with_private_meta: Optional[bool] = False):
+    def dump_to_dict(
+        self,
+        with_private_meta: Optional[bool] = False,
+        without: List[str] = [],
+    ):
+        relationship_links = {"user": "meta"}
         if with_private_meta:
-            return dumpToDict(**self.__dict__, **self.get_private_meta)
-        return dumpToDict(**self.__dict__)
+            return dumpToDict(
+                without=[
+                    *self.get_private_meta,
+                    *without,
+                    "_sa_instance_state",
+                ],
+                relationship_links=relationship_links,
+                **self.__dict__,
+            )
+        return dumpToDict(
+            without=[*without, "_sa_instance_state"],
+            relationship_links=relationship_links,
+            **self.__dict__,
+        )

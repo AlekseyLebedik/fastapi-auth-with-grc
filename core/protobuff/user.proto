@@ -1,59 +1,105 @@
 syntax="proto3";
 import "google/protobuf/timestamp.proto";
 
+package user_account;
 
 service UserService {
-    rpc CreateUser(CreateUserRequest) returns UserResponse;
-    rpc UpdateUser(UpdateUserRequest) returns UserResponse;
-    rpc DeleteUser(DeleteUserRequest) returns bool;
+    rpc CreateUser(CreateUserRequest) returns (TotalResponse);
+    rpc UpdateUser(UpdateUserRequest) returns (TotalResponse);
+    rpc DeleteUser(DeleteUserRequest) returns (TotalResponse);
+    rpc VerifyUserWithDocs(stream VerifyUserWithDocsRequest) returns (TotalResponse);
+    rpc LightVerifyUser(LightVerifyUserRequest) returns (TotalResponse);
+    rpc ChangeUserRole(ChangeUserRoleRequest) returns (TotalResponse);
+    rpc UserDataValidationByAdmin(UserDataValidationByAdminRequest) returns (TotalResponse);
+}
+
+enum ADMIN_CONCLUSION {
+    UNRELIABLE_DATA = 0;
+    VERIFY = 1;
+    POOR_QUALITY_PHOTO = 2;
+    reserved 7 to 15;
 }
 
 enum ROLES {
-    ROLE_PORTAL_USER = 1;
-    ROLE_PORTAL_ADMIN = 2;
-    ROLE_PORTAL_SUPERADMIN = 3;
+    ROLE_PORTAL_USER = 0;
+    ROLE_PORTAL_ADMIN = 1;
+    ROLE_PORTAL_SUPERADMIN = 2;
 }
 
-message UserMessage {
-    oneof user_variant {
-        string email = 1;
-        string phone = 2;
-    };
-    string name = 3;
-    string surname = 4;
-    optional google.protobuf.Timestamp updated_account = 6;
-    bytes avatar = 7;
-    repeated ROLES roles = 8;
+message UserPrivateMeta {
+    optional string document_id = 1;
+    optional string document_photo_links = 2;
+    optional string nationality = 3;
+    optional string mac_ids = 4;
+    optional string verify_date = 5;
+    optional string br_date = 6;
+    reserved 10 to 15;
 }
 
-message OptionalUserMessage {
-    optional string name = 1;
-    optional string surname = 2;
+message User {
+    string fname = 1;
+    string lname = 2;
+    repeated ROLES roles = 3;
+    oneof auth_option {
+        string email = 4;
+        string phone = 5;
+    }
+    optional bytes avatar = 6;
+    optional UserPrivateMeta privateMeta = 7;
+}
+
+message OptionalUser {
+    optional string fname = 1;
+    optional string lname = 2;
     optional bytes avatar = 3;
+    optional string new_email = 4;
+    optional string new_phone = 5;
+}
+
+message TotalResponse {
+    string details = 1;
+    int32 status = 2;
+    oneof response_data {
+        User user = 3;
+        bool condition = 4;
+    }
 }
 
 message CreateUserRequest {
-    UserMessage user = 1;
-}
-
-message UserResponse {
-    UserMessage user = 1;
+    User user = 1;
 }
 
 message UpdateUserRequest {
-    OptionalUserMessage user = 1;
+    OptionalUser user = 1;
 }
-
 
 message DeleteUserRequest {
-    oneof user_variant {
-        string email = 1;
-        string phone = 2;
-    };
-    oneof token_variant {
-        string access_token = 3;
-        string phone_token = 4;
+    oneof auth_option {
+        User user = 1;
+        bool condition = 2;
+        int32 user_id = 3;
     }
 }
+
+message VerifyUserWithDocsRequest {
+    repeated bytes documents = 1;
+    reserved 5 to 10;
+}
+
+message ChangeUserRoleRequest {
+    ROLES role = 1;
+}
+
+message UserDataValidationByAdminRequest {
+    optional User user = 1;
+    ADMIN_CONCLUSION conclusion = 3;
+}
+
+message LightVerifyUserRequest {
+    int32 verify_key = 1;
+    string br_date = 2;
+}
+
+
 
 

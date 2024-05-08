@@ -1,0 +1,13 @@
+grpcio
+grpcio-tools
+fastapi 
+python-multipart 
+uvicorn
+requests
+pydantic
+sqlalchemy[asyncio]
+alembic
+pydantic-settings
+asyncpg
+pendulum
+rich

@@ -1,17 +1,14 @@
 from datetime import datetime
-from enum import Enum
+from typing import List
 
 from core.db.models import Base
-from core.utils.dump_to_dict import dumpToDict
+from core.models.pydantic_models import PortalRole
+from core.models.session import *
+from core.models.user_meta import *
+from core.utils import _print, dumpToDict
 from sqlalchemy import Column, DateTime, Integer, String
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.orm import relationship
-
-
-class PortalRole(str, Enum):
-    ROLE_PORTAL_USER = "ROLE_PORTAL_USER"
-    ROLE_PORTAL_ADMIN = "ROLE_PORTAL_ADMIN"
-    ROLE_PORTAL_SUPERADMIN = "ROLE_PORTAL_SUPERADMIN"
 
 
 class UserModel(Base):
@@ -29,16 +26,28 @@ class UserModel(Base):
 
     __tablename__ = "users"
     user_id = Column(Integer, primary_key=True)
-    roles = Column(ARRAY(String), nullable=False)
+    roles = Column(
+        ARRAY(String(60)),
+        nullable=False,
+        default=[PortalRole.ROLE_PORTAL_USER],
+    )
     hashed_password = Column(String, nullable=False)
     phone_token = Column(String, nullable=True)
     create_at = Column(DateTime, default=datetime.utcnow())
     updated_account = Column(DateTime, default=datetime.utcnow())
     session = relationship(
-        "Session", back_populates="user", cascade="all, delete-orphan", uselist=False
+        "Session",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        uselist=False,
+        lazy="joined",
     )
     meta = relationship(
-        "UserMeta", back_populates="user", cascade="all, delete-orphan", uselist=False
+        "UserMeta",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        uselist=False,
+        lazy="joined",
     )
 
     def __repr__(self):
@@ -60,15 +69,10 @@ class UserModel(Base):
         if self.is_admin:
             return {role for role in self.roles if role != PortalRole.ROLE_PORTAL_ADMIN}
 
-    def __iter__(self):
-        return {
-            "user_id": str(self.user_id),
-            "roles": self.roles,
-            "updated_account": self.updated_account,
-            "hashed_password": self.hashed_password,
-            "create_at": self.create_at,
-        }
-
-    @property
-    def dump_to_dict(self):
-        return dumpToDict(self.__dict__)
+    def dump_to_dict(self, without: List[str] = []):
+        relationship_links = {"meta": "user"}
+        return dumpToDict(
+            without=[*without, "_sa_instance_state"],
+            relationship_links=relationship_links,
+            **self.__dict__,
+        )

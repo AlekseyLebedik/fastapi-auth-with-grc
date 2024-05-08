@@ -1,4 +1,7 @@
+from typing import List
+
 from core.db.models import Base
+from core.models.user import *
 from core.utils.dump_to_dict import dumpToDict
 from core.utils.expire_time import setExpireTime
 from core.utils.verify_key import verifyKey
@@ -20,7 +23,7 @@ class Session(Base):
     user = relationship(
         "UserModel",
         back_populates="session",
-        cascade="all, delete-orphan",
+        lazy="joined",
     )
     access_token = Column(String, nullable=True)
     refresh_token = Column(String, nullable=True)
@@ -40,7 +43,11 @@ class Session(Base):
             "expire_time": self.expire_time,
         }
 
-    @property
-    def dump_to_dict(self):
+    def dump_to_dict(self, without: List[str] = []):
+        relationship_links = {"user": "session"}
         dict = self.__dict__
-        return dumpToDict(dict)
+        return dumpToDict(
+            without=[*without, "_sa_instance_state"],
+            relationship_links=relationship_links,
+            **dict,
+        )
