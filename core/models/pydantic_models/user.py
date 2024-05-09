@@ -17,7 +17,7 @@ class User(BaseModel):
     phone: Optional[str] = None
     roles: List[PortalRole]
     hashed_password: str
-    phone_token: str
+    phone_token: Optional[str] = None
     br_date: Optional[str] = None
     document_id: Optional[str] = None
     document_photo_links: Optional[str] = None

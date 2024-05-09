@@ -8,7 +8,7 @@ def convertFromComplexType(
     format: Optional[str] = None,
     without: List[str] = [],
 ):
-    default_format = "%d:%m:%y %H:%M:%S %z"
+    default_format = "%d:%m:%y %H:%M:%S"
 
     if isinstance(value, UUID):
         return str(value)

@@ -48,14 +48,12 @@ async def get_user_test(
     phone: Optional[PhoneType] = None,
 ):
     try:
-        user = await createUser(
+        user = await getUser(
             password=password,
-            lname=lname,
-            fname=fname,
             email=email,
             phone=phone,
-            mac_id="20:39:30:50:10:22",
         )
+        _print(user)
     except Exception as reason:
         _print(reason)
         raise HTTPException(

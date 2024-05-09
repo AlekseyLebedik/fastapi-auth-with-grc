@@ -3,13 +3,22 @@ from typing import List, Optional
 
 from core.exceptions import DBCreate, DoNotValidCredential
 from core.models import UserMeta, UserModel
-from core.models.pydantic_models import PhoneType, User
+from core.models.pydantic_models import PasswordType, PhoneType, User
 from core.utils import _print, getParams, hasher_instance
 from pydantic import EmailStr
 from sqlalchemy import Select, select
 from sqlalchemy.orm import joinedload
 
 from .session import getSession
+
+
+def none_method_user_decorator(func):
+    def wrapper(*args, **kwargs):
+        if kwargs.get("phone", None) is None and kwargs.get("email", None) is None:
+            raise DBCreate(".Please pass along an email or phone number!")
+        return func(*args, **kwargs)
+
+    return wrapper
 
 
 class MethodUserEnum(Enum):
@@ -32,8 +41,9 @@ def grap_method_user(method: MethodUserEnum, value: str) -> Select:
     )
 
 
+@none_method_user_decorator
 async def getUser(
-    password: str,
+    password: PasswordType,
     email: Optional[EmailStr] = None,
     phone: Optional[PhoneType] = None,
 ) -> User:
@@ -42,29 +52,27 @@ async def getUser(
         method,
         email if email else phone,
     )
-
-    async with getSession() as session:
-        try:
+    try:
+        async with getSession() as session:
             for user_data in await session.scalars(stmt):
                 user = User(**user_data.dump_to_dict(True))
                 if not hasher_instance.verify_password(password, user.hashed_password):
-                    raise DoNotValidCredential("password")
+                    raise DoNotValidCredential()
                 return user
             raise DoNotValidCredential("email or phone")
-        except Exception:
-            raise
+    except Exception:
+        raise
 
 
+@none_method_user_decorator
 async def createUser(
-    password: str,
+    password: PasswordType,
     lname: str,
     fname: str,
-    email: Optional[str],
-    phone: Optional[str],
+    email: Optional[EmailStr],
+    phone: Optional[PhoneType],
     mac_id: str,
 ):
-    if phone == None and email == None:
-        raise DBCreate(". Please pass along an email or phone number!")
     phone_hash = hasher_instance.get_password_hash(phone) if not phone == None else None
     user_meta = UserMeta(
         phone=phone,
@@ -86,7 +94,7 @@ async def createUser(
         async with getSession() as session:
             session.add_all([user_meta, user])
     except Exception:
-        raise DBCreate
+        raise DBCreate(". User exist inside the database")
 
 
 def updateUserMeta(**args) -> User:
