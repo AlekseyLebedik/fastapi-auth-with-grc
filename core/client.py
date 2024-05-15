@@ -2,7 +2,7 @@ from typing import Annotated, List, Optional
 
 import core.user_pb2 as model_user
 import grpc
-from core.db.user_dals import createUser, getUser
+from core.db.user_dals import OrdinaryUpdateUser, createUser, getUser
 from core.models.pydantic_models import PasswordType, PhoneType
 from core.user_pb2_grpc import *
 from core.utils import _print
@@ -38,24 +38,27 @@ def grpc_chanel():
     return grpc.insecure_channel(f"{settings.HOST_GRPC}:{settings.USER_PORT_GRPC}")
 
 
-@app.post("/create_user")
-async def get_user_test(
+@app.post("/ordinary_update_user")
+async def ordinary_update_user(
     request: Request,
-    fname: str,
-    lname: str,
-    password: PasswordType,
+    fname: Optional[str] = None,
+    lname: Optional[str] = None,
+    br_date: Optional[str] = None,
+    avatar: Optional[str] = None,
     email: Optional[EmailStr] = None,
     phone: Optional[PhoneType] = None,
 ):
     try:
-        user = await getUser(
-            password=password,
+        user = await OrdinaryUpdateUser(
             email=email,
             phone=phone,
+            avatar=avatar,
+            br_date=br_date,
+            fname=fname,
+            lname=lname,
         )
-        _print(user)
+
     except Exception as reason:
-        _print(reason)
         raise HTTPException(
             status_code=404,
             detail=(

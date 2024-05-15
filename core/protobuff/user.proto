@@ -5,7 +5,8 @@ package user_account;
 
 service UserService {
     rpc CreateUser(CreateUserRequest) returns (TotalResponse);
-    rpc UpdateUser(UpdateUserRequest) returns (TotalResponse);
+    rpc OrdinaryUpdateUser(OrdinaryUpdateUserRequest) returns (TotalResponse);
+    rpc ChangePhoneNumber() returns (TotalResponse);
     rpc DeleteUser(DeleteUserRequest) returns (TotalResponse);
     rpc VerifyUserWithDocs(stream VerifyUserWithDocsRequest) returns (TotalResponse);
     rpc LightVerifyUser(LightVerifyUserRequest) returns (TotalResponse);
@@ -48,12 +49,11 @@ message User {
     optional UserPrivateMeta privateMeta = 7;
 }
 
-message OptionalUser {
+message AvailableFieldsToUpdate {
     optional string fname = 1;
     optional string lname = 2;
     optional bytes avatar = 3;
-    optional string new_email = 4;
-    optional string new_phone = 5;
+    optional string br_date = 4;
 }
 
 message TotalResponse {
@@ -69,9 +69,17 @@ message CreateUserRequest {
     User user = 1;
 }
 
-message UpdateUserRequest {
-    OptionalUser user = 1;
+message OrdinaryUpdateUserRequest {
+    AvailableFieldsToUpdate user = 1;
 }
+
+message ChangePhoneNumberRequest {
+    string phone_number = 1;
+    string verify_code = 2;
+    bool verify_with_email = 3;
+}
+
+
 
 message DeleteUserRequest {
     oneof auth_option {

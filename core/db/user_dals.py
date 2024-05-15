@@ -1,12 +1,13 @@
 from enum import Enum
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 from core.exceptions import DBCreate, DoNotValidCredential
 from core.models import UserMeta, UserModel
 from core.models.pydantic_models import PasswordType, PhoneType, User
-from core.utils import _print, getParams, hasher_instance
+from core.utils import getParams, hasher_instance, updateClassAttrByKey
 from pydantic import EmailStr
 from sqlalchemy import Select, select
+from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
 from .session import getSession
@@ -15,7 +16,7 @@ from .session import getSession
 def none_method_user_decorator(func):
     def wrapper(*args, **kwargs):
         if kwargs.get("phone", None) is None and kwargs.get("email", None) is None:
-            raise DBCreate(".Please pass along an email or phone number!")
+            raise DoNotValidCredential(". Please pass along an email or phone number!")
         return func(*args, **kwargs)
 
     return wrapper
@@ -44,22 +45,24 @@ def grap_method_user(method: MethodUserEnum, value: str) -> Select:
 @none_method_user_decorator
 async def getUser(
     password: PasswordType,
+    session: AsyncSession,
     email: Optional[EmailStr] = None,
     phone: Optional[PhoneType] = None,
-) -> User:
+) -> UserMeta:
     method = MethodUserEnum.EMAIL if email else MethodUserEnum.PHONE
     stmt: Select = grap_method_user(
         method,
         email if email else phone,
     )
     try:
-        async with getSession() as session:
-            for user_data in await session.scalars(stmt):
-                user = User(**user_data.dump_to_dict(True))
-                if not hasher_instance.verify_password(password, user.hashed_password):
-                    raise DoNotValidCredential()
-                return user
-            raise DoNotValidCredential("email or phone")
+        user_meta = await session.scalar(stmt)
+        if user_meta:
+            if not hasher_instance.verify_password(
+                password, user_meta.user.hashed_password
+            ):
+                raise DoNotValidCredential()
+            return user_meta
+        raise DoNotValidCredential("email or phone")
     except Exception:
         raise
 
@@ -97,9 +100,22 @@ async def createUser(
         raise DBCreate(". User exist inside the database")
 
 
-def updateUserMeta(**args) -> User:
-    params = getParams(**args)
+@none_method_user_decorator
+async def OrdinaryUpdateUser(**kwargs) -> User:
+    white_list = ["fname", "lname", "avatar", "br_date"]
+    update_params = getParams(white_list=white_list, **kwargs)
     try:
-        pass
+        async with getSession() as session:
+            user_meta = await getUser(
+                email=kwargs.get("email", None),
+                phone=kwargs.get("phone", None),
+                password="Password1",
+                session=session,
+            )
+            for key in update_params:
+                updateClassAttrByKey(user_meta, key, kwargs.get(key))
+            await session.commit()
+
+            return User(**user_meta.dump_to_dict())
     except Exception:
-        pass
+        raise

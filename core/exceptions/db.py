@@ -19,7 +19,7 @@ class DoNotValidCredential(Exception):
 
 
 class DBCreate(Exception):
-    message = "Failed to create in the database"
+    message = "Failed in the database"
     status_code = status.HTTP_409_CONFLICT
 
     def __init__(self, reason: Optional[str] = ""):
