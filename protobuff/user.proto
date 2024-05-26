@@ -1,12 +1,11 @@
 syntax="proto3";
-import "google/protobuf/timestamp.proto";
 
-package user_account;
+package user;
 
 service UserService {
     rpc CreateUser(CreateUserRequest) returns (TotalResponse);
     rpc OrdinaryUpdateUser(OrdinaryUpdateUserRequest) returns (TotalResponse);
-    rpc ChangePhoneNumber() returns (TotalResponse);
+    rpc ChangePhoneNumber(ChangePhoneNumberRequest) returns (TotalResponse);
     rpc DeleteUser(DeleteUserRequest) returns (TotalResponse);
     rpc VerifyUserWithDocs(stream VerifyUserWithDocsRequest) returns (TotalResponse);
     rpc LightVerifyUser(LightVerifyUserRequest) returns (TotalResponse);
@@ -41,12 +40,15 @@ message User {
     string fname = 1;
     string lname = 2;
     repeated ROLES roles = 3;
-    oneof auth_option {
-        string email = 4;
-        string phone = 5;
+    optional string email = 4;
+    optional string phone = 5;
+    optional string phone_token = 6;
+    oneof password_variant {
+        string password = 7;
+        string hashed_password = 8;
     }
-    optional bytes avatar = 6;
-    optional UserPrivateMeta privateMeta = 7;
+    optional bytes avatar = 9;
+    optional UserPrivateMeta privateMeta = 10;
 }
 
 message AvailableFieldsToUpdate {
@@ -75,18 +77,12 @@ message OrdinaryUpdateUserRequest {
 
 message ChangePhoneNumberRequest {
     string phone_number = 1;
-    string verify_code = 2;
+    int32 verify_code = 2;
     bool verify_with_email = 3;
 }
 
-
-
 message DeleteUserRequest {
-    oneof auth_option {
-        User user = 1;
-        bool condition = 2;
-        int32 user_id = 3;
-    }
+    int32 user_id = 3;
 }
 
 message VerifyUserWithDocsRequest {
@@ -105,7 +101,6 @@ message UserDataValidationByAdminRequest {
 
 message LightVerifyUserRequest {
     int32 verify_key = 1;
-    string br_date = 2;
 }
 
 

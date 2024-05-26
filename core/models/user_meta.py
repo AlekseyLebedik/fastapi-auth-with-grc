@@ -2,7 +2,7 @@ from typing import List, Optional
 
 from core.db.models import Base
 from core.models.user import *
-from core.utils import _print, dumpToDict
+from core.utils import dumpToDict
 from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.orm import relationship
@@ -10,26 +10,19 @@ from sqlalchemy.orm import relationship
 
 class UserMeta(Base):
     """
-    CLS: UserMeta(id:int, fname:str, lname:str, avatar:str | none, is_verify: bool,
-                    verify_date: DateTime | none, email: str | none, phone: str | none,
+    CLS: UserMeta(id:int, is_verify: bool, verify_date: DateTime | none, email: str | none, phone: str | none,
                     document_id: str | none, document_photo_links: str | none, nationality: str | none)
 
-    PROPERTY: get_private_meta -> return private metadata {document_id, document_photo_links,
-                                                                        nationality, mac_ids }
+    PROPERTY: get_private_meta -> return private metadata {document_id, document_photo_links, nationality, mac_ids}
 
     METHOD: dump_to_dict(with_private_meta:bool) -> return dict UserMeta() fields
     """
 
     __tablename__ = "users_meta"
     id = Column(Integer, primary_key=True)
-    fname = Column(String)
-    lname = Column(String)
-    email = Column(String, unique=True, nullable=True)
-    phone = Column(String(40), unique=True, nullable=True)
     br_date = Column(DateTime, nullable=True)
     document_id = Column(String, nullable=True, unique=True)
     document_photo_links = Column(ARRAY(String), nullable=True)
-    avatar = Column(String, nullable=True)
     nationality = Column(String, nullable=True)
     mac_ids = Column(ARRAY(String(30)), nullable=True)
     is_verify = Column(Boolean, default=False)
@@ -51,6 +44,7 @@ class UserMeta(Base):
             "mac_ids",
             "nationality",
             "br_date",
+            "document_id",
         ]
 
     def dump_to_dict(

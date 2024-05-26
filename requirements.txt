@@ -27,7 +27,6 @@ python-dateutil
 python-dotenv
 python-multipart
 requests
-rich
 setuptools
 six
 sniffio
@@ -38,3 +37,5 @@ tzdata
 urllib3
 uvicorn
 pydantic[email]
+python-jose[cryptography]
+loguru

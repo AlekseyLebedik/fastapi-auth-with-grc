@@ -1,7 +1,14 @@
 from enum import Enum
 from typing import List, Optional
 
-from core.utils.terminal import _print
+
+def nestedGet(checked_dict: dict, keys: List[str]):
+    for key in keys:
+        if isinstance(checked_dict, dict):
+            checked_dict = checked_dict.get(key)
+        else:
+            return None
+    return checked_dict
 
 
 def updateClassAttrByKey(cls, key: str, newValue):

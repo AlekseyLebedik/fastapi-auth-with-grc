@@ -2,10 +2,10 @@ from datetime import datetime
 from typing import List
 
 from core.db.models import Base
-from core.models.pydantic_models import PortalRole
 from core.models.session import *
 from core.models.user_meta import *
-from core.utils import _print, dumpToDict
+from core.pydantic_models import PortalRole
+from core.utils import dumpToDict
 from sqlalchemy import Column, DateTime, Integer, String
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.orm import relationship
@@ -26,13 +26,15 @@ class UserModel(Base):
 
     __tablename__ = "users"
     user_id = Column(Integer, primary_key=True)
+    fname = Column(String)
+    lname = Column(String)
     roles = Column(
-        ARRAY(String(60)),
-        nullable=False,
-        default=[PortalRole.ROLE_PORTAL_USER],
+        ARRAY(String(60)), nullable=False, default=[PortalRole.ROLE_PORTAL_USER]
     )
+    email = Column(String, unique=True, nullable=True)
+    phone_token = Column(String, unique=True, nullable=True)
+    avatar = Column(String, nullable=True)
     hashed_password = Column(String, nullable=False)
-    phone_token = Column(String, nullable=True)
     create_at = Column(DateTime, default=datetime.utcnow())
     updated_account = Column(DateTime, default=datetime.utcnow())
     session = relationship(

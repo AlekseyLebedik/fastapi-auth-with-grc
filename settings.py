@@ -9,10 +9,12 @@ class Settings(BaseSettings):
     POSTGRES_PASSWORD: int
     DB_PORT: int
     DB_HOST: str
-    EXPIRE_MINUTES: int
     HOST_GRPC: str
-    USER_PORT_GRPC: int
-    SESSION_PORT_GRPC: int
+    PORT_GRPC: int
+
+    ACCESS_TOKEN_EXPIRE_MINUTES: int
+    ALGORITHM: str
+    SECRET_KEY: str
 
     @property
     def DATABASE_URL_async(self):

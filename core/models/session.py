@@ -2,9 +2,7 @@ from typing import List
 
 from core.db.models import Base
 from core.models.user import *
-from core.utils.dump_to_dict import dumpToDict
-from core.utils.expire_time import setExpireTime
-from core.utils.verify_key import verifyKey
+from core.utils import dumpToDict, setExpireTime, verifyKey
 from sqlalchemy import Column, DateTime, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 

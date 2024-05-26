@@ -1,0 +1,23 @@
+syntax="proto3";
+
+package session;
+
+service SessionService {
+    rpc CreateSession(SessionRequest) returns (SessionResponse);
+}
+
+
+message SessionRequest {
+    oneof auth_method {
+        string phone_number = 1;
+        string email = 2;
+    }
+    string password = 3;
+}
+
+message SessionResponse {
+    string access_token = 1;
+    string refresh_token = 2;
+    string detail = 3;
+    int32 status = 4;
+}
