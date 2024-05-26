@@ -1,6 +1,6 @@
 import asyncio
 
-from core.exceptions.type import IncorectValueType
+from core.exceptions import IncorectValueType
 from core.pydantic_models.type import (
     emailValidator,
     macIdValidator,

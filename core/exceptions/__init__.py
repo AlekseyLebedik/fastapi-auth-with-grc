@@ -1,6 +1,7 @@
 from .db import DBCreate, DoNotValidCredential
 from .jwt import HaventToken, NoValidTokenRaw
 from .time import IncorrectTimeStr
+from .type import IncorectValueType
 
 __all__ = [
     "DBCreate",
@@ -8,4 +9,5 @@ __all__ = [
     "IncorrectTimeStr",
     "NoValidTokenRaw",
     "HaventToken",
+    "IncorectValueType",
 ]

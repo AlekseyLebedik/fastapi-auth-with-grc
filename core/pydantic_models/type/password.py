@@ -1,8 +1,7 @@
 import re
 from typing import Annotated
 
-import grpc as g
-from core.exceptions.type import IncorectValueType
+from core.exceptions import IncorectValueType
 from core.utils import _logger
 from protobuff import user_models
 from pydantic.functional_validators import AfterValidator
