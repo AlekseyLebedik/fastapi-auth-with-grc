@@ -1,17 +1,12 @@
 from datetime import datetime
-from enum import Enum
 from typing import List, Optional
 
-import grpc as g
-from core.utils import convertFromComplexType
-from protobuff import user_models as models
 from pydantic import BaseModel, EmailStr
 
+from core.utils import convertFromComplexType
+from protobuff import user_models as proto_models
 
-class PortalRole(str, Enum):
-    ROLE_PORTAL_USER = "ROLE_PORTAL_USER"
-    ROLE_PORTAL_ADMIN = "ROLE_PORTAL_ADMIN"
-    ROLE_PORTAL_SUPERADMIN = "ROLE_PORTAL_SUPERADMIN"
+from . import models_enum as Enums
 
 
 class User(BaseModel):
@@ -19,7 +14,7 @@ class User(BaseModel):
     lname: Optional[str] = None
     fname: Optional[str] = None
     phone: Optional[str] = None
-    roles: List[PortalRole] = [PortalRole.ROLE_PORTAL_USER.value]
+    roles: List[Enums.PortalRole] = [Enums.PortalRole.ROLE_PORTAL_USER.value]
     hashed_password: str
     phone_token: Optional[str] = None
     br_date: Optional[str] = None
@@ -33,13 +28,13 @@ class User(BaseModel):
     create_at: Optional[str] = convertFromComplexType(datetime.now())
     updated_account: Optional[str] = None
 
-    def protoUser(
+    def proto_user(
         self,
         withPrivateField: bool = False,
     ):
         private_meta = None
         if withPrivateField:
-            private_meta = models.UserPrivateMeta(
+            private_meta = proto_models.UserPrivateMeta(
                 document_id=self.document_id,
                 document_photo_links=self.document_photo_links,
                 nationality=self.nationality,
@@ -47,7 +42,7 @@ class User(BaseModel):
                 verify_date=self.verify_date,
                 br_date=self.br_date,
             )
-        return models.User(
+        return proto_models.User(
             fname=self.fname,
             lname=self.lname,
             roles=self.roles,

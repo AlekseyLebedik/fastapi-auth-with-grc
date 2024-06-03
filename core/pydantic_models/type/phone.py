@@ -1,13 +1,14 @@
 import re
 from typing import Annotated
 
-from core.exceptions import IncorectValueType
-from core.utils import _logger
 from pydantic.functional_validators import AfterValidator
 
+from core.exceptions import IncorectValueType
+from core.pydantic_models.type.helpers import unwantedTypeDecorator
 
+
+@unwantedTypeDecorator(str, "You passed the incorrect phone number")
 def phoneValidator(value: str):
-    error = None
     if re.search(r"^\d+$", value[1::]) is None:
         error = "There should not be any letters in the phone number."
     elif not value.startswith("+"):

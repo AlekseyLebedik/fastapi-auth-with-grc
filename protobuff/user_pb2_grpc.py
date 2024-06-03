@@ -5,7 +5,7 @@ import grpc
 from . import user_pb2 as user__pb2
 
 
-class UserServiceStub(object):
+class UserServiceStub:
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -56,7 +56,7 @@ class UserServiceStub(object):
         )
 
 
-class UserServiceServicer(object):
+class UserServiceServicer:
     """Missing associated documentation comment in .proto file."""
 
     def CreateUser(self, request, context):
@@ -158,7 +158,7 @@ def add_UserServiceServicer_to_server(servicer, server):
 
 
 # This class is part of an EXPERIMENTAL API.
-class UserService(object):
+class UserService:
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod

@@ -1,25 +1,17 @@
-from fastapi import status
+import grpc as g
 
 
 class NoValidTokenRaw(Exception):
-    message = "Your token is not valid. You are denied access!"
-    status_code = status.HTTP_401_UNAUTHORIZED
+    details = "Your token is not valid. You are denied access!"
+    status = g.StatusCode.UNAUTHENTICATED
 
     def __str__(self) -> str:
-        return self.message
-
-    @property
-    def get_message(self) -> str:
-        return self.message
+        return self.details
 
 
 class HaventToken(Exception):
-    message = "You haven't transferred the token!"
-    status_code = status.HTTP_400_BAD_REQUEST
+    details = "You haven't transferred the token!"
+    status = g.StatusCode.INVALID_ARGUMENT
 
     def __str__(self) -> str:
-        return self.message
-
-    @property
-    def get_message(self) -> str:
-        return self.message
+        return self.details

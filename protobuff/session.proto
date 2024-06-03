@@ -3,7 +3,7 @@ syntax="proto3";
 package session;
 
 service SessionService {
-    rpc CreateSession(SessionRequest) returns (SessionResponse);
+    rpc CreateSession(stream SessionRequest) returns (stream SessionResponse);
 }
 
 
@@ -16,8 +16,8 @@ message SessionRequest {
 }
 
 message SessionResponse {
-    string access_token = 1;
+    string session_mark = 1;
     string refresh_token = 2;
-    string detail = 3;
+    string details = 3;
     int32 status = 4;
 }

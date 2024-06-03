@@ -1,8 +1,10 @@
 from contextlib import asynccontextmanager
 
 import grpc as g
+from grpc.aio import Channel
 from grpc.experimental import aio
 from loguru import logger
+
 from settings import settings
 
 _SERVER_ADDR_CHANNEL = f"{settings.HOST_GRPC}:{settings.PORT_GRPC}"
@@ -29,7 +31,7 @@ async def createClientChannelWithToken(token):
 @logger.catch
 @asynccontextmanager
 async def createClientChannel():
-    channel = None
+    channel: Channel = None
     try:
         channel = aio.insecure_channel(_SERVER_ADDR_CHANNEL)
         logger.info("Successfully opened channel...")

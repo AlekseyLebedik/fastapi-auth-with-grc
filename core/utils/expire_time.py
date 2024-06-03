@@ -1,6 +1,7 @@
 from typing import Optional
 
 import pendulum
+
 from settings import settings
 
 from .jwt import RequestDateType

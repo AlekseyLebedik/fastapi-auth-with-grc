@@ -1,0 +1,10 @@
+
+[lint]
+ignore = ["F403"]
+select = [
+    "F",
+    "UP",
+    "B",
+    "SIM",
+    "I",
+]

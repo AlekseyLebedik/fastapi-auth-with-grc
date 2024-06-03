@@ -1,7 +1,7 @@
-import typing as t
 
 import grpc as g
 import grpc.aio as gaio
+
 from core.utils import _logger
 
 from .methods import MethodsEnum
@@ -20,7 +20,6 @@ class AuthInterceptor(gaio.ServerInterceptor):
         continuation,
         handler_call_details,
     ):
-        _logger.warning("AUTHINTERCEPTOR (1)")
         metadata = dict(handler_call_details.invocation_metadata)
         if metadata.get("authorization", "").__contains__("Bearer "):
             _logger.info(f"Intercepter: with token {metadata.get("authorization")}")
@@ -28,6 +27,9 @@ class AuthInterceptor(gaio.ServerInterceptor):
         else:
             if handler_call_details.method.endswith(MethodsEnum.CREATE_USER.value):
                 _logger.info(f"Intercepter: pass inside the {MethodsEnum.CREATE_USER.value} method")
+                return await continuation(handler_call_details)
+            elif handler_call_details.method.endswith(MethodsEnum.CREATE_SESSION.value):
+                _logger.info(f"Intercepter: pass inside the {MethodsEnum.CREATE_SESSION.value} method")
                 return await continuation(handler_call_details)
             return self._abort_hendler
 

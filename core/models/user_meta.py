@@ -1,11 +1,12 @@
 from typing import List, Optional
 
-from core.db.models import Base
-from core.models.user import *
-from core.utils import dumpToDict
 from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.orm import relationship
+
+from core.db.models import Base
+from core.models.user import *
+from core.utils import dumpToDict
 
 
 class UserMeta(Base):

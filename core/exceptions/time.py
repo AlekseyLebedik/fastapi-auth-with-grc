@@ -1,13 +1,9 @@
-from fastapi import status
+import grpc as g
 
 
 class IncorrectTimeStr(Exception):
-    message = "Incorrectly transmitted time as a string!"
-    status_code = status.HTTP_400_BAD_REQUEST
+    details = "Incorrectly transmitted time as a string!"
+    status_code = g.StatusCode.INVALID_ARGUMENT
 
     def __str__(self) -> str:
-        return self.message
-
-    @property
-    def get_message(self) -> str:
-        return self.message
+        return self.details

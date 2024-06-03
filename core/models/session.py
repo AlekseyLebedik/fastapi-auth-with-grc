@@ -1,10 +1,11 @@
 from typing import List
 
+from sqlalchemy import Column, DateTime, ForeignKey, Integer, String
+from sqlalchemy.orm import relationship
+
 from core.db.models import Base
 from core.models.user import *
 from core.utils import dumpToDict, setExpireTime, verifyKey
-from sqlalchemy import Column, DateTime, ForeignKey, Integer, String
-from sqlalchemy.orm import relationship
 
 
 class Session(Base):

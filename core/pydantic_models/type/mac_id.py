@@ -1,9 +1,9 @@
 import re
 from typing import Annotated
 
-import grpc as g
-from core.exceptions import IncorectValueType
 from pydantic.functional_validators import AfterValidator
+
+from core.exceptions import IncorectValueType
 
 
 def macIdValidator(value: str):

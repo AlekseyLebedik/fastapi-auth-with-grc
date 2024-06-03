@@ -1,35 +1,28 @@
 from enum import Enum
-from typing import List, Optional
+from typing import Optional
 
-from core.exceptions import DBCreate, DoNotValidCredential, HaventToken
-from core.models import UserMeta, UserModel
-from core.pydantic_models import User
-from core.pydantic_models.type import PasswordType, PhoneType
-from core.utils import (
-    _logger,
-    createAccessToken,
-    decodeJwtToken,
-    getParams,
-    hasher_instance,
-    nestedGet,
-    updateClassAttrByKey,
-)
 from pydantic import EmailStr
 from sqlalchemy import Select, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
+from core.exceptions import DBCreate, DoNotValidCredential, HaventToken
+from core.models.user import UserModel
+from core.models.user_meta import UserMeta
+from core.pydantic_models import User
+from core.pydantic_models.type import PasswordType, PhoneType
+from core.utils import (
+    _logger,
+    decodeJwtToken,
+    getParams,
+    hasher_instance,
+    noneMethodUserDecorator,
+    updateClassAttrByKey,
+)
+from core.utils.session_store.store import session_store
+
 from .session import getSession
-
-
-def noneMethodUserDecorator(func):
-    def wrapper(*args, **kwargs):
-        if kwargs.get("phone", None) is None and kwargs.get("email", None) is None:
-            raise DoNotValidCredential(". Please pass along an email or phone number!")
-        return func(*args, **kwargs)
-
-    return wrapper
 
 
 class MethodUserEnum(Enum):
@@ -40,15 +33,15 @@ class MethodUserEnum(Enum):
 def grapMethodUser(method: MethodUserEnum, value: str) -> Select:
     if method == MethodUserEnum.EMAIL:
         return (
-            select(UserMeta)
-            .where(UserMeta.email == value)
-            .options(joinedload(UserMeta.user))
+            select(UserModel)
+            .where(UserModel.email == value)
+            .options(joinedload(UserModel.meta))
         )
 
     return (
-        select(UserMeta)
-        .where(UserMeta.phone == value)
-        .options(joinedload(UserMeta.user))
+        select(UserModel)
+        .where(UserModel.phone_token == value)
+        .options(joinedload(UserModel.meta))
     )
 
 
@@ -70,17 +63,19 @@ async def getUser(
     session: AsyncSession,
     email: Optional[EmailStr] = None,
     phone: Optional[PhoneType] = None,
-) -> UserMeta:
+) -> UserModel:
     method = MethodUserEnum.EMAIL if email else MethodUserEnum.PHONE
-    stmt: Select = grapMethodUser(method, email if email else phone)
+    stmt: Select = grapMethodUser(
+        method, email if email else hasher_instance.get_password_hash(phone)
+    )
     try:
-        user_meta = await session.scalar(stmt)
-        if user_meta:
+        user_model: UserModel = await session.scalar(stmt)
+        if user_model:
             if not hasher_instance.verify_password(
-                password, user_meta.user.hashed_password
+                password, user_model.hashed_password
             ):
                 raise DoNotValidCredential()
-            return user_meta
+            return user_model
         raise DoNotValidCredential("email or phone")
     except Exception:
         raise
@@ -98,7 +93,7 @@ async def createUser(
     try:
         phone_hash = (
             hasher_instance.get_password_hash(phone)
-            if not phone == None and len(phone) > 1
+            if phone != None and len(phone) > 1
             else None
         )
         user_meta = UserMeta(mac_ids=[mac_id])

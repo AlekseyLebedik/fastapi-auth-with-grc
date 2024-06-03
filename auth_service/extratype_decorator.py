@@ -1,5 +1,7 @@
 import asyncio
 
+from google.protobuf.json_format import MessageToDict
+
 from core.exceptions import IncorectValueType
 from core.pydantic_models.type import (
     emailValidator,
@@ -7,8 +9,7 @@ from core.pydantic_models.type import (
     passwordValidator,
     phoneValidator,
 )
-from core.utils import _logger
-from google.protobuf.json_format import MessageToDict
+from core.utils import exceptionHandlingWithContext
 
 
 def extraValueCheck(key, value):
@@ -22,31 +23,35 @@ def extraValueCheck(key, value):
         macIdValidator(value)
 
 
-def extratypeDecorator(entry_key):
+def extratypeDecorator(entry_key=None):
     def decorator(func):
         async def asyncWrapper(self, request, context):
             try:
                 if asyncio.iscoroutine(request):
                     request = await request
-                proto_dict = MessageToDict(request).get(entry_key)
-                for key in proto_dict.keys():
+                proto_dict = (
+                    MessageToDict(request).get(entry_key)
+                    if entry_key
+                    else MessageToDict(request)
+                )
+                for key in proto_dict:
                     extraValueCheck(key, proto_dict.get(key))
                 return await func(self, request, context)
             except IncorectValueType as ivc:
-                _logger.error(f"Exception: {str(ivc.details)}")
-                context.set_code(ivc.status)
-                context.set_details(ivc.details)
+                exceptionHandlingWithContext(context, ivc)
 
         def syncWrapper(self, request, context):
-            proto_dict = MessageToDict(request).get(entry_key)
+            proto_dict = (
+                MessageToDict(request).get(entry_key)
+                if entry_key is not None
+                else MessageToDict(request)
+            )
             try:
-                for key in proto_dict.keys():
+                for key in proto_dict:
                     extraValueCheck(key, proto_dict.get(key))
                 return func(self, request, context)
             except IncorectValueType as ivc:
-                _logger.error(f"Exception: {str(ivc.details)}")
-                context.set_code(ivc.status)
-                context.set_details(ivc.details)
+                exceptionHandlingWithContext(context, ivc)
 
         if asyncio.iscoroutinefunction(func):
             return asyncWrapper

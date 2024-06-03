@@ -1,14 +1,15 @@
+import typing as t
 from datetime import datetime
-from typing import List
+
+from sqlalchemy import Column, DateTime, Integer, String
+from sqlalchemy.dialects.postgresql import ARRAY
+from sqlalchemy.orm import relationship
 
 from core.db.models import Base
 from core.models.session import *
 from core.models.user_meta import *
-from core.pydantic_models import PortalRole
+from core.pydantic_models import models_enum as Emums
 from core.utils import dumpToDict
-from sqlalchemy import Column, DateTime, Integer, String
-from sqlalchemy.dialects.postgresql import ARRAY
-from sqlalchemy.orm import relationship
 
 
 class UserModel(Base):
@@ -29,7 +30,7 @@ class UserModel(Base):
     fname = Column(String)
     lname = Column(String)
     roles = Column(
-        ARRAY(String(60)), nullable=False, default=[PortalRole.ROLE_PORTAL_USER]
+        ARRAY(String(60)), nullable=False, default=[Emums.PortalRole.ROLE_PORTAL_USER]
     )
     email = Column(String, unique=True, nullable=True)
     phone_token = Column(String, unique=True, nullable=True)
@@ -57,23 +58,30 @@ class UserModel(Base):
 
     @property
     def is_superadmin(self) -> bool:
-        return PortalRole.ROLE_PORTAL_SUPERADMIN in self.roles
+        return Emums.PortalRole.ROLE_PORTAL_SUPERADMIN in self.roles
 
     @property
     def is_admin(self) -> bool:
-        return PortalRole.ROLE_PORTAL_ADMIN in self.roles
+        return Emums.PortalRole.ROLE_PORTAL_ADMIN in self.roles
 
     def enrich_admin_roles_by_admin_role(self):
         if not self.is_admin:
-            return {*self.roles, PortalRole.ROLE_PORTAL_ADMIN}
+            return {*self.roles, Emums.PortalRole.ROLE_PORTAL_ADMIN}
 
     def remove_admin_privileges_from_model(self):
         if self.is_admin:
-            return {role for role in self.roles if role != PortalRole.ROLE_PORTAL_ADMIN}
+            return {
+                role
+                for role in self.roles
+                if role != Emums.PortalRole.ROLE_PORTAL_ADMIN
+            }
 
-    def dump_to_dict(self, without: List[str] = []):
+    def dump_to_dict(
+        self, with_private_meta: t.Optional[bool] = False, without: t.List[str] = []
+    ):
         relationship_links = {"meta": "user"}
         return dumpToDict(
+            with_private_meta=with_private_meta,
             without=[*without, "_sa_instance_state"],
             relationship_links=relationship_links,
             **self.__dict__,

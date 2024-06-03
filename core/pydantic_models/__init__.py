@@ -1,3 +1,3 @@
-from .user import PortalRole, User
+from .user import User
 
-__all__ = ["PortalRole", "User"]
+__all__ = ["User"]

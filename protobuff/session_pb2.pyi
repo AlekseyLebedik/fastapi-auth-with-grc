@@ -13,15 +13,15 @@ class SessionRequest:
     ): ...
 
 class SessionResponse:
-    access_token: str
+    session_mark: str
     refresh_token: str
-    detail: str
+    details: str
     status: int
 
     def __init__(
         self,
-        access_token: str,
+        session_mark: str,
         refresh_token: str,
-        detail: str,
+        details: str,
         status: int,
     ) -> None: ...

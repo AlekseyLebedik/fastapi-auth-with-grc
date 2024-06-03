@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rsession.proto\x12\x07session\"Z\n\x0eSessionRequest\x12\x16\n\x0cphone_number\x18\x01 \x01(\tH\x00\x12\x0f\n\x05\x65mail\x18\x02 \x01(\tH\x00\x12\x10\n\x08password\x18\x03 \x01(\tB\r\n\x0b\x61uth_method\"^\n\x0fSessionResponse\x12\x14\n\x0c\x61\x63\x63\x65ss_token\x18\x01 \x01(\t\x12\x15\n\rrefresh_token\x18\x02 \x01(\t\x12\x0e\n\x06\x64\x65tail\x18\x03 \x01(\t\x12\x0e\n\x06status\x18\x04 \x01(\x05\x32T\n\x0eSessionService\x12\x42\n\rCreateSession\x12\x17.session.SessionRequest\x1a\x18.session.SessionResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rsession.proto\x12\x07session\"Z\n\x0eSessionRequest\x12\x16\n\x0cphone_number\x18\x01 \x01(\tH\x00\x12\x0f\n\x05\x65mail\x18\x02 \x01(\tH\x00\x12\x10\n\x08password\x18\x03 \x01(\tB\r\n\x0b\x61uth_method\"_\n\x0fSessionResponse\x12\x14\n\x0csession_mark\x18\x01 \x01(\t\x12\x15\n\rrefresh_token\x18\x02 \x01(\t\x12\x0f\n\x07\x64\x65tails\x18\x03 \x01(\t\x12\x0e\n\x06status\x18\x04 \x01(\x05\x32T\n\x0eSessionService\x12\x42\n\rCreateSession\x12\x17.session.SessionRequest\x1a\x18.session.SessionResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -24,7 +24,7 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_SESSIONREQUEST']._serialized_start=26
   _globals['_SESSIONREQUEST']._serialized_end=116
   _globals['_SESSIONRESPONSE']._serialized_start=118
-  _globals['_SESSIONRESPONSE']._serialized_end=212
-  _globals['_SESSIONSERVICE']._serialized_start=214
-  _globals['_SESSIONSERVICE']._serialized_end=298
+  _globals['_SESSIONRESPONSE']._serialized_end=213
+  _globals['_SESSIONSERVICE']._serialized_start=215
+  _globals['_SESSIONSERVICE']._serialized_end=299
 # @@protoc_insertion_point(module_scope)

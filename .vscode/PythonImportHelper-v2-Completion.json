@@ -1,0 +1,2719 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "typing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "typing",
+        "description": "typing",
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncGenerator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "Connection",
+        "importPath": "sqlalchemy.engine",
+        "description": "sqlalchemy.engine",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.engine",
+        "documentation": {}
+    },
+    {
+        "label": "async_engine_from_config",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "create_async_engine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "core.db.models",
+        "description": "core.db.models",
+        "isExtraImport": true,
+        "detail": "core.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "core.db.models",
+        "description": "core.db.models",
+        "isExtraImport": true,
+        "detail": "core.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "core.db.models",
+        "description": "core.db.models",
+        "isExtraImport": true,
+        "detail": "core.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "core.db.models",
+        "description": "core.db.models",
+        "isExtraImport": true,
+        "detail": "core.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "settings",
+        "description": "settings",
+        "isExtraImport": true,
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "settings",
+        "description": "settings",
+        "isExtraImport": true,
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "settings",
+        "description": "settings",
+        "isExtraImport": true,
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "settings",
+        "description": "settings",
+        "isExtraImport": true,
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "settings",
+        "description": "settings",
+        "isExtraImport": true,
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "settings",
+        "description": "settings",
+        "isExtraImport": true,
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "createSession",
+        "importPath": "core.db.session_dals",
+        "description": "core.db.session_dals",
+        "isExtraImport": true,
+        "detail": "core.db.session_dals",
+        "documentation": {}
+    },
+    {
+        "label": "createUser",
+        "importPath": "core.db.user_dals",
+        "description": "core.db.user_dals",
+        "isExtraImport": true,
+        "detail": "core.db.user_dals",
+        "documentation": {}
+    },
+    {
+        "label": "createUser",
+        "importPath": "core.db.user_dals",
+        "description": "core.db.user_dals",
+        "isExtraImport": true,
+        "detail": "core.db.user_dals",
+        "documentation": {}
+    },
+    {
+        "label": "getUser",
+        "importPath": "core.db.user_dals",
+        "description": "core.db.user_dals",
+        "isExtraImport": true,
+        "detail": "core.db.user_dals",
+        "documentation": {}
+    },
+    {
+        "label": "_logger",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "exceptionHandlingWithContext",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "exceptionHandlingWithContext",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "_logger",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "_logger",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "createAccessToken",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "createRefreshToken",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "_logger",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "decodeJwtToken",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "getParams",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "hasher_instance",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "noneMethodUserDecorator",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "updateClassAttrByKey",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "dumpToDict",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "setExpireTime",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "verifyKey",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "dumpToDict",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "dumpToDict",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "convertFromComplexType",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "_logger",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "_logger",
+        "importPath": "core.utils",
+        "description": "core.utils",
+        "isExtraImport": true,
+        "detail": "core.utils",
+        "documentation": {}
+    },
+    {
+        "label": "session_services",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "user_models",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "user_services",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "session_models",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "user_models",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "session_models",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "session_services",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "user_models",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "user_services",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "session_services",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "user_services",
+        "importPath": "protobuff",
+        "description": "protobuff",
+        "isExtraImport": true,
+        "detail": "protobuff",
+        "documentation": {}
+    },
+    {
+        "label": "MessageToDict",
+        "importPath": "google.protobuf.json_format",
+        "description": "google.protobuf.json_format",
+        "isExtraImport": true,
+        "detail": "google.protobuf.json_format",
+        "documentation": {}
+    },
+    {
+        "label": "IncorectValueType",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "DBCreate",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "DoNotValidCredential",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "HaventToken",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "IncorectValueType",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "IncorectValueType",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "IncorectValueType",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "IncorectValueType",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "IncorectValueType",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "DoNotValidCredential",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "NoValidTokenRaw",
+        "importPath": "core.exceptions",
+        "description": "core.exceptions",
+        "isExtraImport": true,
+        "detail": "core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "emailValidator",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "macIdValidator",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "passwordValidator",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "phoneValidator",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "EmailType",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordType",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "PhoneType",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordType",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "PhoneType",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordType",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "PhoneType",
+        "importPath": "core.pydantic_models.type",
+        "description": "core.pydantic_models.type",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type",
+        "documentation": {}
+    },
+    {
+        "label": "grpc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "grpc",
+        "description": "grpc",
+        "detail": "grpc",
+        "documentation": {}
+    },
+    {
+        "label": "grpc.aio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "grpc.aio",
+        "description": "grpc.aio",
+        "detail": "grpc.aio",
+        "documentation": {}
+    },
+    {
+        "label": "Channel",
+        "importPath": "grpc.aio",
+        "description": "grpc.aio",
+        "isExtraImport": true,
+        "detail": "grpc.aio",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "joinedload",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "core.pydantic_models.user",
+        "description": "core.pydantic_models.user",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "core.pydantic_models.user",
+        "description": "core.pydantic_models.user",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "core.pydantic_models.user",
+        "description": "core.pydantic_models.user",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.user",
+        "documentation": {}
+    },
+    {
+        "label": "session_store",
+        "importPath": "core.utils.session_store.store",
+        "description": "core.utils.session_store.store",
+        "isExtraImport": true,
+        "detail": "core.utils.session_store.store",
+        "documentation": {}
+    },
+    {
+        "label": "session_store",
+        "importPath": "core.utils.session_store.store",
+        "description": "core.utils.session_store.store",
+        "isExtraImport": true,
+        "detail": "core.utils.session_store.store",
+        "documentation": {}
+    },
+    {
+        "label": "session_store",
+        "importPath": "core.utils.session_store.store",
+        "description": "core.utils.session_store.store",
+        "isExtraImport": true,
+        "detail": "core.utils.session_store.store",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "importPath": "core.models.user",
+        "description": "core.models.user",
+        "isExtraImport": true,
+        "detail": "core.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core.models.user",
+        "description": "core.models.user",
+        "isExtraImport": true,
+        "detail": "core.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core.models.user",
+        "description": "core.models.user",
+        "isExtraImport": true,
+        "detail": "core.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserMeta",
+        "importPath": "core.models.user_meta",
+        "description": "core.models.user_meta",
+        "isExtraImport": true,
+        "detail": "core.models.user_meta",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core.models.user_meta",
+        "description": "core.models.user_meta",
+        "isExtraImport": true,
+        "detail": "core.models.user_meta",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "core.pydantic_models",
+        "description": "core.pydantic_models",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models",
+        "documentation": {}
+    },
+    {
+        "label": "models_enum",
+        "importPath": "core.pydantic_models",
+        "description": "core.pydantic_models",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "ARRAY",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "ARRAY",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core.models.session",
+        "description": "core.models.session",
+        "isExtraImport": true,
+        "detail": "core.models.session",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "AfterValidator",
+        "importPath": "pydantic.functional_validators",
+        "description": "pydantic.functional_validators",
+        "isExtraImport": true,
+        "detail": "pydantic.functional_validators",
+        "documentation": {}
+    },
+    {
+        "label": "AfterValidator",
+        "importPath": "pydantic.functional_validators",
+        "description": "pydantic.functional_validators",
+        "isExtraImport": true,
+        "detail": "pydantic.functional_validators",
+        "documentation": {}
+    },
+    {
+        "label": "AfterValidator",
+        "importPath": "pydantic.functional_validators",
+        "description": "pydantic.functional_validators",
+        "isExtraImport": true,
+        "detail": "pydantic.functional_validators",
+        "documentation": {}
+    },
+    {
+        "label": "AfterValidator",
+        "importPath": "pydantic.functional_validators",
+        "description": "pydantic.functional_validators",
+        "isExtraImport": true,
+        "detail": "pydantic.functional_validators",
+        "documentation": {}
+    },
+    {
+        "label": "unwantedTypeDecorator",
+        "importPath": "core.pydantic_models.type.helpers",
+        "description": "core.pydantic_models.type.helpers",
+        "isExtraImport": true,
+        "detail": "core.pydantic_models.type.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "setExpireTime",
+        "importPath": "core.utils.expire_time",
+        "description": "core.utils.expire_time",
+        "isExtraImport": true,
+        "detail": "core.utils.expire_time",
+        "documentation": {}
+    },
+    {
+        "label": "aio",
+        "importPath": "grpc.experimental",
+        "description": "grpc.experimental",
+        "isExtraImport": true,
+        "detail": "grpc.experimental",
+        "documentation": {}
+    },
+    {
+        "label": "aio",
+        "importPath": "grpc.experimental",
+        "description": "grpc.experimental",
+        "isExtraImport": true,
+        "detail": "grpc.experimental",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "pendulum",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pendulum",
+        "description": "pendulum",
+        "detail": "pendulum",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "descriptor",
+        "importPath": "google.protobuf",
+        "description": "google.protobuf",
+        "isExtraImport": true,
+        "detail": "google.protobuf",
+        "documentation": {}
+    },
+    {
+        "label": "descriptor_pool",
+        "importPath": "google.protobuf",
+        "description": "google.protobuf",
+        "isExtraImport": true,
+        "detail": "google.protobuf",
+        "documentation": {}
+    },
+    {
+        "label": "symbol_database",
+        "importPath": "google.protobuf",
+        "description": "google.protobuf",
+        "isExtraImport": true,
+        "detail": "google.protobuf",
+        "documentation": {}
+    },
+    {
+        "label": "descriptor",
+        "importPath": "google.protobuf",
+        "description": "google.protobuf",
+        "isExtraImport": true,
+        "detail": "google.protobuf",
+        "documentation": {}
+    },
+    {
+        "label": "descriptor_pool",
+        "importPath": "google.protobuf",
+        "description": "google.protobuf",
+        "isExtraImport": true,
+        "detail": "google.protobuf",
+        "documentation": {}
+    },
+    {
+        "label": "symbol_database",
+        "importPath": "google.protobuf",
+        "description": "google.protobuf",
+        "isExtraImport": true,
+        "detail": "google.protobuf",
+        "documentation": {}
+    },
+    {
+        "label": "builder",
+        "importPath": "google.protobuf.internal",
+        "description": "google.protobuf.internal",
+        "isExtraImport": true,
+        "detail": "google.protobuf.internal",
+        "documentation": {}
+    },
+    {
+        "label": "builder",
+        "importPath": "google.protobuf.internal",
+        "description": "google.protobuf.internal",
+        "isExtraImport": true,
+        "detail": "google.protobuf.internal",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "createClientChannel",
+        "importPath": "core.utils.channels",
+        "description": "core.utils.channels",
+        "isExtraImport": true,
+        "detail": "core.utils.channels",
+        "documentation": {}
+    },
+    {
+        "label": "AuthInterceptor",
+        "importPath": "auth_service",
+        "description": "auth_service",
+        "isExtraImport": true,
+        "detail": "auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "AuthServiceServicer",
+        "importPath": "auth_service",
+        "description": "auth_service",
+        "isExtraImport": true,
+        "detail": "auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsConfigDict",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"fastapi-auth-with-grc-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"fastapi-auth-with-grc-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"fastapi-auth-with-grc-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"fastapi-auth-with-grc-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"fastapi-auth-with-grc-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-04-24_create_session_tables_user_tables",
+        "description": "alembic.versions.2024-04-24_create_session_tables_user_tables",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"users\",\n        sa.Column(\"user_id\", sa.Integer(), nullable=False),\n        sa.Column(\"roles\", postgresql.ARRAY(sa.String()), nullable=False),\n        sa.Column(\"hashed_password\", sa.String(), nullable=False),\n        sa.Column(\"phone_token\", sa.String(), nullable=True),\n        sa.Column(\"create_at\", sa.DateTime(), nullable=True),\n        sa.Column(\"updated_account\", sa.DateTime(), nullable=True),",
+        "detail": "alembic.versions.2024-04-24_create_session_tables_user_tables",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-04-24_create_session_tables_user_tables",
+        "description": "alembic.versions.2024-04-24_create_session_tables_user_tables",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table(\"sessions\")\n    op.drop_table(\"users_meta\")\n    op.drop_table(\"users\")\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.2024-04-24_create_session_tables_user_tables",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-04-30_add_default_value_for_roles_field",
+        "description": "alembic.versions.2024-04-30_add_default_value_for_roles_field",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.2024-04-30_add_default_value_for_roles_field",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-04-30_add_default_value_for_roles_field",
+        "description": "alembic.versions.2024-04-30_add_default_value_for_roles_field",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.2024-04-30_add_default_value_for_roles_field",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-04-30_add_foreign_key",
+        "description": "alembic.versions.2024-04-30_add_foreign_key",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column(\"users_meta\", sa.Column(\"user_id\", sa.Integer(), nullable=True))\n    op.create_unique_constraint(None, \"users_meta\", [\"user_id\"])\n    op.create_foreign_key(None, \"users_meta\", \"users\", [\"user_id\"], [\"user_id\"])\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, \"users_meta\", type_=\"foreignkey\")\n    op.drop_constraint(None, \"users_meta\", type_=\"unique\")",
+        "detail": "alembic.versions.2024-04-30_add_foreign_key",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-04-30_add_foreign_key",
+        "description": "alembic.versions.2024-04-30_add_foreign_key",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, \"users_meta\", type_=\"foreignkey\")\n    op.drop_constraint(None, \"users_meta\", type_=\"unique\")\n    op.drop_column(\"users_meta\", \"user_id\")\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.2024-04-30_add_foreign_key",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-04-30_little_change_type_inside_table_and_add_",
+        "description": "alembic.versions.2024-04-30_little_change_type_inside_table_and_add_",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('users_meta', sa.Column('br_date', sa.DateTime(), nullable=True))\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('users_meta', 'br_date')\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.2024-04-30_little_change_type_inside_table_and_add_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-04-30_little_change_type_inside_table_and_add_",
+        "description": "alembic.versions.2024-04-30_little_change_type_inside_table_and_add_",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('users_meta', 'br_date')\n    # ### end Alembic commands ###",
+        "detail": "alembic.versions.2024-04-30_little_change_type_inside_table_and_add_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-05-20_change_architecture_usermeta_and_",
+        "description": "alembic.versions.2024-05-20_change_architecture_usermeta_and_",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('users', sa.Column('fname', sa.String(), nullable=True))\n    op.add_column('users', sa.Column('lname', sa.String(), nullable=True))\n    op.add_column('users', sa.Column('email', sa.String(), nullable=True))\n    op.add_column('users', sa.Column('avatar', sa.String(), nullable=True))\n    op.create_unique_constraint(None, 'users', ['phone_token'])\n    op.create_unique_constraint(None, 'users', ['email'])\n    op.drop_constraint('users_meta_email_key', 'users_meta', type_='unique')\n    op.drop_constraint('users_meta_phone_key', 'users_meta', type_='unique')",
+        "detail": "alembic.versions.2024-05-20_change_architecture_usermeta_and_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.2024-05-20_change_architecture_usermeta_and_",
+        "description": "alembic.versions.2024-05-20_change_architecture_usermeta_and_",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('users_meta', sa.Column('lname', sa.VARCHAR(), autoincrement=False, nullable=True))\n    op.add_column('users_meta', sa.Column('phone', sa.VARCHAR(), autoincrement=False, nullable=True))\n    op.add_column('users_meta', sa.Column('email', sa.VARCHAR(), autoincrement=False, nullable=True))\n    op.add_column('users_meta', sa.Column('avatar', sa.VARCHAR(), autoincrement=False, nullable=True))\n    op.add_column('users_meta', sa.Column('fname', sa.VARCHAR(), autoincrement=False, nullable=True))\n    op.create_unique_constraint('users_meta_phone_key', 'users_meta', ['phone'])\n    op.create_unique_constraint('users_meta_email_key', 'users_meta', ['email'])\n    op.drop_constraint(None, 'users', type_='unique')",
+        "detail": "alembic.versions.2024-05-20_change_architecture_usermeta_and_",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "do_run_migrations",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def do_run_migrations(connection: Connection) -> None:\n    context.configure(connection=connection, target_metadata=target_metadata)\n    with context.begin_transaction():\n        context.run_migrations()\nasync def run_async_migrations() -> None:\n    \"\"\"In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = async_engine_from_config(\n        config.get_section(config.config_ini_section, {}),",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\"\"\"\n    asyncio.run(run_async_migrations())\nif context.is_offline_mode():\n    run_migrations_offline()\nelse:\n    run_migrations_online()",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "config = context.config\nconfig.set_main_option(\"sqlalchemy.url\", settings.DATABASE_URL_async)\n# Interpret the config file for Python logging.\n# This line sets up _loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "target_metadata = Base.metadata\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "AuthServiceServicer",
+        "kind": 6,
+        "importPath": "auth_service.auth_service_servicer",
+        "description": "auth_service.auth_service_servicer",
+        "peekOfCode": "class AuthServiceServicer(\n    session_services.SessionServiceServicer,\n    user_services.UserServiceServicer,\n):\n    @extratypeDecorator(\"user\")\n    async def CreateUser(self, request, context):\n        _logger.info(f\"{MethodsEnum.CREATE_USER.value} methods starting ...\")\n        metadata = dict(context.invocation_metadata())\n        try:\n            user = request.user",
+        "detail": "auth_service.auth_service_servicer",
+        "documentation": {}
+    },
+    {
+        "label": "extraValueCheck",
+        "kind": 2,
+        "importPath": "auth_service.extratype_decorator",
+        "description": "auth_service.extratype_decorator",
+        "peekOfCode": "def extraValueCheck(key, value):\n    if key in \"phone\":\n        phoneValidator(value)\n    elif key in \"password\":\n        passwordValidator(value)\n    elif key in \"email\":\n        emailValidator(value)\n    elif key in \"mac\":\n        macIdValidator(value)\ndef extratypeDecorator(entry_key=None):",
+        "detail": "auth_service.extratype_decorator",
+        "documentation": {}
+    },
+    {
+        "label": "extratypeDecorator",
+        "kind": 2,
+        "importPath": "auth_service.extratype_decorator",
+        "description": "auth_service.extratype_decorator",
+        "peekOfCode": "def extratypeDecorator(entry_key=None):\n    def decorator(func):\n        async def asyncWrapper(self, request, context):\n            try:\n                if asyncio.iscoroutine(request):\n                    request = await request\n                proto_dict = (\n                    MessageToDict(request).get(entry_key)\n                    if entry_key\n                    else MessageToDict(request)",
+        "detail": "auth_service.extratype_decorator",
+        "documentation": {}
+    },
+    {
+        "label": "AuthInterceptor",
+        "kind": 6,
+        "importPath": "auth_service.interceptor",
+        "description": "auth_service.interceptor",
+        "peekOfCode": "class AuthInterceptor(gaio.ServerInterceptor):\n    def __init__(self) -> None:\n        def abort(request, context):\n            _logger.info(\"Reporting: AuthInterceptor call abort method ... \")\n            return context.abort(g.StatusCode.UNAUTHENTICATED, \"The provided token is incorrect. Please ensure that the token is valid and properly formatted\")\n        self._abort_hendler = g.unary_unary_rpc_method_handler(abort)\n    async def intercept_service(\n        self,\n        continuation,\n        handler_call_details,",
+        "detail": "auth_service.interceptor",
+        "documentation": {}
+    },
+    {
+        "label": "MethodsEnum",
+        "kind": 6,
+        "importPath": "auth_service.methods",
+        "description": "auth_service.methods",
+        "peekOfCode": "class MethodsEnum(str, Enum):\n    CREATE_USER = \"CreateUser\"\n    ORDINARY_UPDATE_USER = \"OrdinaryUpdateUser\"\n    CREATE_SESSION = \"CreateSession\"",
+        "detail": "auth_service.methods",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "core.db.models",
+        "description": "core.db.models",
+        "peekOfCode": "Base = declarative_base()",
+        "detail": "core.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "core.db.session",
+        "description": "core.db.session",
+        "peekOfCode": "engine = create_async_engine(\n    settings.DATABASE_URL_async,\n    future=True,\n    echo=True,\n)\nSession = sessionmaker(\n    engine,\n    expire_on_commit=False,\n    class_=AsyncSession,\n)",
+        "detail": "core.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "kind": 5,
+        "importPath": "core.db.session",
+        "description": "core.db.session",
+        "peekOfCode": "Session = sessionmaker(\n    engine,\n    expire_on_commit=False,\n    class_=AsyncSession,\n)\n@asynccontextmanager\nasync def getSession() -> AsyncGenerator:\n    session_instance = None\n    try:\n        async with Session.begin() as session:",
+        "detail": "core.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "MethodUserEnum",
+        "kind": 6,
+        "importPath": "core.db.user_dals",
+        "description": "core.db.user_dals",
+        "peekOfCode": "class MethodUserEnum(Enum):\n    EMAIL = 0\n    PHONE = 1\ndef grapMethodUser(method: MethodUserEnum, value: str) -> Select:\n    if method == MethodUserEnum.EMAIL:\n        return (\n            select(UserModel)\n            .where(UserModel.email == value)\n            .options(joinedload(UserModel.meta))\n        )",
+        "detail": "core.db.user_dals",
+        "documentation": {}
+    },
+    {
+        "label": "grapMethodUser",
+        "kind": 2,
+        "importPath": "core.db.user_dals",
+        "description": "core.db.user_dals",
+        "peekOfCode": "def grapMethodUser(method: MethodUserEnum, value: str) -> Select:\n    if method == MethodUserEnum.EMAIL:\n        return (\n            select(UserModel)\n            .where(UserModel.email == value)\n            .options(joinedload(UserModel.meta))\n        )\n    return (\n        select(UserModel)\n        .where(UserModel.phone_token == value)",
+        "detail": "core.db.user_dals",
+        "documentation": {}
+    },
+    {
+        "label": "DoNotValidCredential",
+        "kind": 6,
+        "importPath": "core.exceptions.db",
+        "description": "core.exceptions.db",
+        "peekOfCode": "class DoNotValidCredential(Exception):\n    details = \"You have entered an incorrect\"\n    status = g.StatusCode.INVALID_ARGUMENT\n    def __init__(self, reason: Optional[str] = \"password\"):\n        from core.utils import _logger\n        self.details = f\"{self.details} {reason}!\"\n        _logger.warning(reason, self.details)\n    def __str__(self) -> str:\n        return self.details\nclass DBCreate(Exception):",
+        "detail": "core.exceptions.db",
+        "documentation": {}
+    },
+    {
+        "label": "DBCreate",
+        "kind": 6,
+        "importPath": "core.exceptions.db",
+        "description": "core.exceptions.db",
+        "peekOfCode": "class DBCreate(Exception):\n    details = \"Failed in the database\"\n    status = g.StatusCode.INVALID_ARGUMENT\n    def __init__(self, reason: Optional[str] = \"\"):\n        self.details = f\"{self.details} {reason}!\"\n    def __str__(self) -> str:\n        return self.details",
+        "detail": "core.exceptions.db",
+        "documentation": {}
+    },
+    {
+        "label": "NoValidTokenRaw",
+        "kind": 6,
+        "importPath": "core.exceptions.jwt",
+        "description": "core.exceptions.jwt",
+        "peekOfCode": "class NoValidTokenRaw(Exception):\n    details = \"Your token is not valid. You are denied access!\"\n    status = g.StatusCode.UNAUTHENTICATED\n    def __str__(self) -> str:\n        return self.details\nclass HaventToken(Exception):\n    details = \"You haven't transferred the token!\"\n    status = g.StatusCode.INVALID_ARGUMENT\n    def __str__(self) -> str:\n        return self.details",
+        "detail": "core.exceptions.jwt",
+        "documentation": {}
+    },
+    {
+        "label": "HaventToken",
+        "kind": 6,
+        "importPath": "core.exceptions.jwt",
+        "description": "core.exceptions.jwt",
+        "peekOfCode": "class HaventToken(Exception):\n    details = \"You haven't transferred the token!\"\n    status = g.StatusCode.INVALID_ARGUMENT\n    def __str__(self) -> str:\n        return self.details",
+        "detail": "core.exceptions.jwt",
+        "documentation": {}
+    },
+    {
+        "label": "disallowed_patterns",
+        "kind": 5,
+        "importPath": "core.exceptions.sql",
+        "description": "core.exceptions.sql",
+        "peekOfCode": "disallowed_patterns = [\n    \";\",\n    \"--\",\n    \"/*\",\n    \"*/\",\n    \"xp_\",\n    \"exec\",\n    \"union\",\n    \"select\",\n    \"insert\",",
+        "detail": "core.exceptions.sql",
+        "documentation": {}
+    },
+    {
+        "label": "IncorrectTimeStr",
+        "kind": 6,
+        "importPath": "core.exceptions.time",
+        "description": "core.exceptions.time",
+        "peekOfCode": "class IncorrectTimeStr(Exception):\n    details = \"Incorrectly transmitted time as a string!\"\n    status_code = g.StatusCode.INVALID_ARGUMENT\n    def __str__(self) -> str:\n        return self.details",
+        "detail": "core.exceptions.time",
+        "documentation": {}
+    },
+    {
+        "label": "IncorectValueType",
+        "kind": 6,
+        "importPath": "core.exceptions.type",
+        "description": "core.exceptions.type",
+        "peekOfCode": "class IncorectValueType(Exception):\n    status = g.StatusCode.INVALID_ARGUMENT\n    details = \"Incorect pass type.\"\n    def __init__(self, reason: t.Optional[str] = None):\n        self.details = f\"{self.details} {reason if reason else \"\"}!\"",
+        "detail": "core.exceptions.type",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "kind": 6,
+        "importPath": "core.models.session",
+        "description": "core.models.session",
+        "peekOfCode": "class Session(Base):\n    \"\"\"\n    CLS: Session(id:int, user_id:int, access_token:str | none, refresh_token:str | none,\n                    verify_key:int, expire_time:Datetime)\n    PROPERTY: dump_to_dict -> dict with Session fields\n    \"\"\"\n    __tablename__ = \"sessions\"\n    id = Column(Integer, primary_key=True)\n    user_id = Column(Integer, ForeignKey(\"users.user_id\"))\n    user = relationship(",
+        "detail": "core.models.session",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "kind": 6,
+        "importPath": "core.models.user",
+        "description": "core.models.user",
+        "peekOfCode": "class UserModel(Base):\n    \"\"\"\n    CLS: UserModel(roles: [ROLE_PORTAL_USER | ROLE_PORTAL_ADMIN | ROLE_PORTAL_SUPERADMIN],\n                  hashed_password: str, phone_token:str, create_at: DateTime, updated_account: DateTime )\n    PROPERTY: is_superadmin -> return bool;\n    PROPERTY: is_admin -> return bool;\n    PROPERTY: dump_to_dict -> dict with UserModel fields\n    METHOD: enrich_admin_roles_by_admin_role() -> return [ROLE_PORTAL_USER | ROLE_PORTAL_SUPERADMIN , ROLE_PORTAL_ADMIN  ]\n    METHOD: remove_admin_privileges_from_model() -> return [ROLE_PORTAL_USER | ROLE_PORTAL_SUPERADMIN ]\n    \"\"\"",
+        "detail": "core.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserMeta",
+        "kind": 6,
+        "importPath": "core.models.user_meta",
+        "description": "core.models.user_meta",
+        "peekOfCode": "class UserMeta(Base):\n    \"\"\"\n    CLS: UserMeta(id:int, is_verify: bool, verify_date: DateTime | none, email: str | none, phone: str | none,\n                    document_id: str | none, document_photo_links: str | none, nationality: str | none)\n    PROPERTY: get_private_meta -> return private metadata {document_id, document_photo_links, nationality, mac_ids}\n    METHOD: dump_to_dict(with_private_meta:bool) -> return dict UserMeta() fields\n    \"\"\"\n    __tablename__ = \"users_meta\"\n    id = Column(Integer, primary_key=True)\n    br_date = Column(DateTime, nullable=True)",
+        "detail": "core.models.user_meta",
+        "documentation": {}
+    },
+    {
+        "label": "emailValidator",
+        "kind": 2,
+        "importPath": "core.pydantic_models.type.email",
+        "description": "core.pydantic_models.type.email",
+        "peekOfCode": "def emailValidator(value: str):\n    if re.search(r\"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\", value) is None:\n        raise IncorectValueType(_raisen_msg)\n    return value\nEmailType = Annotated[str, AfterValidator(emailValidator)]",
+        "detail": "core.pydantic_models.type.email",
+        "documentation": {}
+    },
+    {
+        "label": "_raisen_msg",
+        "kind": 5,
+        "importPath": "core.pydantic_models.type.email",
+        "description": "core.pydantic_models.type.email",
+        "peekOfCode": "_raisen_msg = \"Invalid email format. Please enter a valid email address\"\n@unwantedTypeDecorator(str, _raisen_msg)\ndef emailValidator(value: str):\n    if re.search(r\"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\", value) is None:\n        raise IncorectValueType(_raisen_msg)\n    return value\nEmailType = Annotated[str, AfterValidator(emailValidator)]",
+        "detail": "core.pydantic_models.type.email",
+        "documentation": {}
+    },
+    {
+        "label": "EmailType",
+        "kind": 5,
+        "importPath": "core.pydantic_models.type.email",
+        "description": "core.pydantic_models.type.email",
+        "peekOfCode": "EmailType = Annotated[str, AfterValidator(emailValidator)]",
+        "detail": "core.pydantic_models.type.email",
+        "documentation": {}
+    },
+    {
+        "label": "unwantedTypeDecorator",
+        "kind": 2,
+        "importPath": "core.pydantic_models.type.helpers",
+        "description": "core.pydantic_models.type.helpers",
+        "peekOfCode": "def unwantedTypeDecorator(check_cls, exception_msg):\n    def decorator(func):\n        def wrapper(value, *args):\n            if value and isinstance(value, check_cls):\n                return func(value, *args)\n            raise IncorectValueType(exception_msg)\n        return wrapper\n    return decorator",
+        "detail": "core.pydantic_models.type.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "macIdValidator",
+        "kind": 2,
+        "importPath": "core.pydantic_models.type.mac_id",
+        "description": "core.pydantic_models.type.mac_id",
+        "peekOfCode": "def macIdValidator(value: str):\n    pattern = r\"^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$\"\n    error = None\n    if re.search(pattern, value) is None:\n        error = \"Invalid MAC address format. Please enter a valid MAC address in the format XX:XX:XX:XX:XX or XX-XX-XX-XX-XX-XX.\"\n    if error:\n        raise IncorectValueType(error)\n    return value\nMacIDType = Annotated[str, AfterValidator(macIdValidator)]",
+        "detail": "core.pydantic_models.type.mac_id",
+        "documentation": {}
+    },
+    {
+        "label": "MacIDType",
+        "kind": 5,
+        "importPath": "core.pydantic_models.type.mac_id",
+        "description": "core.pydantic_models.type.mac_id",
+        "peekOfCode": "MacIDType = Annotated[str, AfterValidator(macIdValidator)]",
+        "detail": "core.pydantic_models.type.mac_id",
+        "documentation": {}
+    },
+    {
+        "label": "passwordValidator",
+        "kind": 2,
+        "importPath": "core.pydantic_models.type.password",
+        "description": "core.pydantic_models.type.password",
+        "peekOfCode": "def passwordValidator(value: str):\n    if re.search(r\"(?=.*[A-Z])(?=.*\\d)\", value) is None:\n        raise IncorectValueType(\n            \"Password must contain 1 capital letter and 1 digit! Example Pasword123\"\n        )\n    elif len(value) < 4:\n        raise IncorectValueType(\n            \"Password must not be less than 4 characters! Example Pass1\"\n        )\n    return value",
+        "detail": "core.pydantic_models.type.password",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordType",
+        "kind": 5,
+        "importPath": "core.pydantic_models.type.password",
+        "description": "core.pydantic_models.type.password",
+        "peekOfCode": "PasswordType = Annotated[str, AfterValidator(passwordValidator)]",
+        "detail": "core.pydantic_models.type.password",
+        "documentation": {}
+    },
+    {
+        "label": "phoneValidator",
+        "kind": 2,
+        "importPath": "core.pydantic_models.type.phone",
+        "description": "core.pydantic_models.type.phone",
+        "peekOfCode": "def phoneValidator(value: str):\n    if re.search(r\"^\\d+$\", value[1::]) is None:\n        error = \"There should not be any letters in the phone number.\"\n    elif not value.startswith(\"+\"):\n        error = \"Your phone number does not start with a country code prefix '+'. Example +38XXXXXXXXXX\"\n    elif len(value) < 10 and len(value) < 18:\n        error = \"You have entered an incorrect phone number, it should be in the range of 10 - 18 chars including country code and prefix ('+'). Example +38XXXXXXXXXX\"\n    if error:\n        raise IncorectValueType(error)\n    return value",
+        "detail": "core.pydantic_models.type.phone",
+        "documentation": {}
+    },
+    {
+        "label": "PhoneType",
+        "kind": 5,
+        "importPath": "core.pydantic_models.type.phone",
+        "description": "core.pydantic_models.type.phone",
+        "peekOfCode": "PhoneType = Annotated[str, AfterValidator(phoneValidator)]",
+        "detail": "core.pydantic_models.type.phone",
+        "documentation": {}
+    },
+    {
+        "label": "PortalRole",
+        "kind": 6,
+        "importPath": "core.pydantic_models.models_enum",
+        "description": "core.pydantic_models.models_enum",
+        "peekOfCode": "class PortalRole(str, Enum):\n    ROLE_PORTAL_USER = \"ROLE_PORTAL_USER\"\n    ROLE_PORTAL_ADMIN = \"ROLE_PORTAL_ADMIN\"\n    ROLE_PORTAL_SUPERADMIN = \"ROLE_PORTAL_SUPERADMIN\"",
+        "detail": "core.pydantic_models.models_enum",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "core.pydantic_models.user",
+        "description": "core.pydantic_models.user",
+        "peekOfCode": "class User(BaseModel):\n    email: Optional[EmailStr] = None\n    lname: Optional[str] = None\n    fname: Optional[str] = None\n    phone: Optional[str] = None\n    roles: List[Enums.PortalRole] = [Enums.PortalRole.ROLE_PORTAL_USER.value]\n    hashed_password: str\n    phone_token: Optional[str] = None\n    br_date: Optional[str] = None\n    document_id: Optional[str] = None",
+        "detail": "core.pydantic_models.user",
+        "documentation": {}
+    },
+    {
+        "label": "SessionNode",
+        "kind": 6,
+        "importPath": "core.utils.session_store.models",
+        "description": "core.utils.session_store.models",
+        "peekOfCode": "class SessionNode(BaseModel):\n    user: User\n    session_mark: str\n    expire_time: datetime = setExpireTime()",
+        "detail": "core.utils.session_store.models",
+        "documentation": {}
+    },
+    {
+        "label": "SessionStore",
+        "kind": 6,
+        "importPath": "core.utils.session_store.store",
+        "description": "core.utils.session_store.store",
+        "peekOfCode": "class SessionStore:\n    def __init__(self) -> None:\n        self._sessions: dict = {}\n        self._cache: dict = {}\n    def set_session(self, key: str, user: User, session_mark: str):\n        cache_key = user.email if user.email else user.phone_token\n        self.update_cache(cache_key, key)\n        self._sessions[key] = SessionNode(user=user, session_mark=session_mark)\n        return self._sessions\n    def get_session(self, key: str):",
+        "detail": "core.utils.session_store.store",
+        "documentation": {}
+    },
+    {
+        "label": "session_store",
+        "kind": 5,
+        "importPath": "core.utils.session_store.store",
+        "description": "core.utils.session_store.store",
+        "peekOfCode": "session_store = SessionStore()",
+        "detail": "core.utils.session_store.store",
+        "documentation": {}
+    },
+    {
+        "label": "_SERVER_ADDR_CHANNEL",
+        "kind": 5,
+        "importPath": "core.utils.channels",
+        "description": "core.utils.channels",
+        "peekOfCode": "_SERVER_ADDR_CHANNEL = f\"{settings.HOST_GRPC}:{settings.PORT_GRPC}\"\n@logger.catch\n@asynccontextmanager\nasync def createClientChannelWithToken(token):\n    channel = None\n    token_credential = g.access_token_call_credentials(token)\n    composite_credentials = g.composite_channel_credentials(\n        g.local_channel_credentials(),\n        token_credential,\n    )",
+        "detail": "core.utils.channels",
+        "documentation": {}
+    },
+    {
+        "label": "noneMethodUserDecorator",
+        "kind": 2,
+        "importPath": "core.utils.decorators",
+        "description": "core.utils.decorators",
+        "peekOfCode": "def noneMethodUserDecorator(func):\n    from core.pydantic_models.type import emailValidator, phoneValidator\n    def wrapper(*args, **kwargs):\n        phone = kwargs.get(\"phone\")\n        email = kwargs.get(\"email\")\n        try:\n            if phone:\n                phoneValidator(phone)\n            if email:\n                emailValidator(email)",
+        "detail": "core.utils.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "convertFromComplexType",
+        "kind": 2,
+        "importPath": "core.utils.dump_to_dict",
+        "description": "core.utils.dump_to_dict",
+        "peekOfCode": "def convertFromComplexType(\n    value: any,\n    with_private_meta: bool = False,\n    format: Optional[str] = None,\n    without: List[str] = [],\n):\n    default_format = \"%d:%m:%y %H:%M:%S\"\n    if isinstance(value, UUID):\n        return str(value)\n    if isinstance(value, datetime):",
+        "detail": "core.utils.dump_to_dict",
+        "documentation": {}
+    },
+    {
+        "label": "dumpToDict",
+        "kind": 2,
+        "importPath": "core.utils.dump_to_dict",
+        "description": "core.utils.dump_to_dict",
+        "peekOfCode": "def dumpToDict(\n    without: List[str],\n    with_private_meta: Optional[bool] = False,\n    relationship_links: Dict[str, str] = {},\n    format: Optional[str] = None,\n    **args,\n):\n    dict = {}\n    for key, value in args.items():\n        if not without.__contains__(key):",
+        "detail": "core.utils.dump_to_dict",
+        "documentation": {}
+    },
+    {
+        "label": "exceptionHandlingWithContext",
+        "kind": 2,
+        "importPath": "core.utils.exceptions",
+        "description": "core.utils.exceptions",
+        "peekOfCode": "def exceptionHandlingWithContext(\n    context,\n    exception,\n    method: str = \"\",\n    default_status=g.StatusCode.UNKNOWN,\n):\n    from core.utils import _logger\n    status = default_status\n    details = exception\n    _logger.error(exception)",
+        "detail": "core.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "setExpireTime",
+        "kind": 2,
+        "importPath": "core.utils.expire_time",
+        "description": "core.utils.expire_time",
+        "peekOfCode": "def setExpireTime(expires_delta: Optional[RequestDateType] = None):\n    current = pendulum.now(tz=pendulum.now().timezone)\n    return current.add(\n        minutes=expires_delta if expires_delta else settings.ACCESS_TOKEN_EXPIRE_MINUTES\n    )",
+        "detail": "core.utils.expire_time",
+        "documentation": {}
+    },
+    {
+        "label": "RequestDateType",
+        "kind": 6,
+        "importPath": "core.utils.jwt",
+        "description": "core.utils.jwt",
+        "peekOfCode": "class RequestDateType(BaseModel):\n    year: Optional[int] = None\n    month: Optional[int] = None\n    day: Optional[int] = None\n    hour: Optional[int] = None\n    minute: Optional[int] = None\n    second: Optional[int] = None\ndef createAccessToken(email, expires_delta: Optional[RequestDateType] = None):\n    current = pendulum.now(tz=pendulum.now().timezone)\n    date = current.add(",
+        "detail": "core.utils.jwt",
+        "documentation": {}
+    },
+    {
+        "label": "createAccessToken",
+        "kind": 2,
+        "importPath": "core.utils.jwt",
+        "description": "core.utils.jwt",
+        "peekOfCode": "def createAccessToken(email, expires_delta: Optional[RequestDateType] = None):\n    current = pendulum.now(tz=pendulum.now().timezone)\n    date = current.add(\n        minutes=expires_delta if expires_delta else settings.ACCESS_TOKEN_EXPIRE_MINUTES\n    )\n    encoded_jwt = jwt.encode(\n        {\"user\": email, \"exp\": date.format(\"x\")},\n        settings.SECRET_KEY,\n        algorithm=settings.ALGORITHM,\n    )",
+        "detail": "core.utils.jwt",
+        "documentation": {}
+    },
+    {
+        "label": "decodeJwtToken",
+        "kind": 2,
+        "importPath": "core.utils.jwt",
+        "description": "core.utils.jwt",
+        "peekOfCode": "def decodeJwtToken(token: str) -> dict:\n    try:\n        decoded_dict = jwt.decode(\n            token=token,\n            key=settings.SECRET_KEY,\n            algorithms=settings.ALGORITHM,\n        )\n    except JWTError:\n        raise NoValidTokenRaw\n    return decoded_dict",
+        "detail": "core.utils.jwt",
+        "documentation": {}
+    },
+    {
+        "label": "createRefreshToken",
+        "kind": 2,
+        "importPath": "core.utils.jwt",
+        "description": "core.utils.jwt",
+        "peekOfCode": "def createRefreshToken(\n    email: Optional[str] = None,\n    phone: Optional[str] = None,\n):\n    verify = {\"email\": email} if email else {\"phone_hash\": phone}\n    encoded_jwt = jwt.encode(verify, settings.SECRET_KEY, algorithm=settings.ALGORITHM)\n    return encoded_jwt",
+        "detail": "core.utils.jwt",
+        "documentation": {}
+    },
+    {
+        "label": "Logger",
+        "kind": 6,
+        "importPath": "core.utils.logger",
+        "description": "core.utils.logger",
+        "peekOfCode": "class Logger:\n    def listMessage(self, messages: Union[List, any], method):\n        if isinstance(messages, Tuple):\n            for message in messages:\n                method(message)\n        else:\n            method(messages[0])\n    def info(self, *messages):\n        self.listMessage(messages, logger.info)\n    def warning(self, *messages):",
+        "detail": "core.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "current_dir",
+        "kind": 5,
+        "importPath": "core.utils.logger",
+        "description": "core.utils.logger",
+        "peekOfCode": "current_dir = os.getcwd()\nlogger_dir = os.path.abspath(os.path.join(current_dir, \"logger/info.json\"))\nlogger.add(\n    logger_dir,\n    level=\"ERROR\",\n    format=\"{time} {level} {message}\",\n    rotation=\"1 week\",\n    compression=\"zip\",\n    serialize=True,\n)",
+        "detail": "core.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "logger_dir",
+        "kind": 5,
+        "importPath": "core.utils.logger",
+        "description": "core.utils.logger",
+        "peekOfCode": "logger_dir = os.path.abspath(os.path.join(current_dir, \"logger/info.json\"))\nlogger.add(\n    logger_dir,\n    level=\"ERROR\",\n    format=\"{time} {level} {message}\",\n    rotation=\"1 week\",\n    compression=\"zip\",\n    serialize=True,\n)\n@dataclass",
+        "detail": "core.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "_logger",
+        "kind": 5,
+        "importPath": "core.utils.logger",
+        "description": "core.utils.logger",
+        "peekOfCode": "_logger = Logger()",
+        "detail": "core.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "WithoutValueEnum",
+        "kind": 6,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "class WithoutValueEnum(Enum):\n    NONE = 0\n    NEGATIVE = 1\ndef negativeCondition(value):\n    negative = [None, False]\n    if value < 0 or negative.__contains__(value):\n        return True\ndef noneCondition(value):\n    return value != None\ndef getParamsWithWhiteList(without: WithoutValueEnum, whiteList: List[str], **kwargs):",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "nestedGet",
+        "kind": 2,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "def nestedGet(checked_dict: dict, keys: List[str]):\n    for key in keys:\n        if isinstance(checked_dict, dict):\n            checked_dict = checked_dict.get(key)\n        else:\n            return None\n    return checked_dict\ndef updateClassAttrByKey(cls, key: str, newValue):\n    if hasattr(cls, key):\n        setattr(cls, key, newValue)",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "updateClassAttrByKey",
+        "kind": 2,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "def updateClassAttrByKey(cls, key: str, newValue):\n    if hasattr(cls, key):\n        setattr(cls, key, newValue)\n    return cls\nclass WithoutValueEnum(Enum):\n    NONE = 0\n    NEGATIVE = 1\ndef negativeCondition(value):\n    negative = [None, False]\n    if value < 0 or negative.__contains__(value):",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "negativeCondition",
+        "kind": 2,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "def negativeCondition(value):\n    negative = [None, False]\n    if value < 0 or negative.__contains__(value):\n        return True\ndef noneCondition(value):\n    return value != None\ndef getParamsWithWhiteList(without: WithoutValueEnum, whiteList: List[str], **kwargs):\n    withoutCondition = (\n        noneCondition if without == WithoutValueEnum.NONE else negativeCondition\n    )",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "noneCondition",
+        "kind": 2,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "def noneCondition(value):\n    return value != None\ndef getParamsWithWhiteList(without: WithoutValueEnum, whiteList: List[str], **kwargs):\n    withoutCondition = (\n        noneCondition if without == WithoutValueEnum.NONE else negativeCondition\n    )\n    return {\n        key: value\n        for key, value in kwargs.items()\n        if whiteList.__contains__(key) and withoutCondition(value)",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "getParamsWithWhiteList",
+        "kind": 2,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "def getParamsWithWhiteList(without: WithoutValueEnum, whiteList: List[str], **kwargs):\n    withoutCondition = (\n        noneCondition if without == WithoutValueEnum.NONE else negativeCondition\n    )\n    return {\n        key: value\n        for key, value in kwargs.items()\n        if whiteList.__contains__(key) and withoutCondition(value)\n    }\ndef getParamsWithoutNoneValue(**kwargs):",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "getParamsWithoutNoneValue",
+        "kind": 2,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "def getParamsWithoutNoneValue(**kwargs):\n    return {key: value for key, value in kwargs.items() if noneCondition(value)}\ndef getParamsWithoutNegativeValue(**kwargs):\n    return {key: value for key, value in kwargs.items() if not negativeCondition(value)}\ndef getParams(\n    without: WithoutValueEnum = WithoutValueEnum.NONE,\n    white_list: Optional[List[str]] = None,\n    **kwargs\n):\n    if white_list != None:",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "getParamsWithoutNegativeValue",
+        "kind": 2,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "def getParamsWithoutNegativeValue(**kwargs):\n    return {key: value for key, value in kwargs.items() if not negativeCondition(value)}\ndef getParams(\n    without: WithoutValueEnum = WithoutValueEnum.NONE,\n    white_list: Optional[List[str]] = None,\n    **kwargs\n):\n    if white_list != None:\n        return getParamsWithWhiteList(without, white_list, **kwargs)\n    if without == WithoutValueEnum.NEGATIVE:",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "getParams",
+        "kind": 2,
+        "importPath": "core.utils.params",
+        "description": "core.utils.params",
+        "peekOfCode": "def getParams(\n    without: WithoutValueEnum = WithoutValueEnum.NONE,\n    white_list: Optional[List[str]] = None,\n    **kwargs\n):\n    if white_list != None:\n        return getParamsWithWhiteList(without, white_list, **kwargs)\n    if without == WithoutValueEnum.NEGATIVE:\n        return getParamsWithoutNegativeValue(**kwargs)\n    return getParamsWithoutNoneValue(**kwargs)",
+        "detail": "core.utils.params",
+        "documentation": {}
+    },
+    {
+        "label": "Hasher",
+        "kind": 6,
+        "importPath": "core.utils.password",
+        "description": "core.utils.password",
+        "peekOfCode": "class Hasher:\n    @staticmethod\n    def verify_password(plain_password: str, hashed_password: str) -> bool:\n        return pwd_context.verify(plain_password, hashed_password)\n    @staticmethod\n    def get_password_hash(password: str) -> str:\n        return pwd_context.hash(password)\nhasher_instance = Hasher()",
+        "detail": "core.utils.password",
+        "documentation": {}
+    },
+    {
+        "label": "pwd_context",
+        "kind": 5,
+        "importPath": "core.utils.password",
+        "description": "core.utils.password",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\nclass Hasher:\n    @staticmethod\n    def verify_password(plain_password: str, hashed_password: str) -> bool:\n        return pwd_context.verify(plain_password, hashed_password)\n    @staticmethod\n    def get_password_hash(password: str) -> str:\n        return pwd_context.hash(password)\nhasher_instance = Hasher()",
+        "detail": "core.utils.password",
+        "documentation": {}
+    },
+    {
+        "label": "hasher_instance",
+        "kind": 5,
+        "importPath": "core.utils.password",
+        "description": "core.utils.password",
+        "peekOfCode": "hasher_instance = Hasher()",
+        "detail": "core.utils.password",
+        "documentation": {}
+    },
+    {
+        "label": "verifyKey",
+        "kind": 2,
+        "importPath": "core.utils.verify_key",
+        "description": "core.utils.verify_key",
+        "peekOfCode": "def verifyKey():\n    return random.randint(100000, 999999)",
+        "detail": "core.utils.verify_key",
+        "documentation": {}
+    },
+    {
+        "label": "_sym_db",
+        "kind": 5,
+        "importPath": "protobuff.session_pb2",
+        "description": "protobuff.session_pb2",
+        "peekOfCode": "_sym_db = _symbol_database.Default()\nDESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\\n\\rsession.proto\\x12\\x07session\\\"Z\\n\\x0eSessionRequest\\x12\\x16\\n\\x0cphone_number\\x18\\x01 \\x01(\\tH\\x00\\x12\\x0f\\n\\x05\\x65mail\\x18\\x02 \\x01(\\tH\\x00\\x12\\x10\\n\\x08password\\x18\\x03 \\x01(\\tB\\r\\n\\x0b\\x61uth_method\\\"_\\n\\x0fSessionResponse\\x12\\x14\\n\\x0csession_mark\\x18\\x01 \\x01(\\t\\x12\\x15\\n\\rrefresh_token\\x18\\x02 \\x01(\\t\\x12\\x0f\\n\\x07\\x64\\x65tails\\x18\\x03 \\x01(\\t\\x12\\x0e\\n\\x06status\\x18\\x04 \\x01(\\x05\\x32T\\n\\x0eSessionService\\x12\\x42\\n\\rCreateSession\\x12\\x17.session.SessionRequest\\x1a\\x18.session.SessionResponseb\\x06proto3')\n_globals = globals()\n_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)\n_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'session_pb2', _globals)\nif _descriptor._USE_C_DESCRIPTORS == False:\n  DESCRIPTOR._options = None\n  _globals['_SESSIONREQUEST']._serialized_start=26\n  _globals['_SESSIONREQUEST']._serialized_end=116\n  _globals['_SESSIONRESPONSE']._serialized_start=118",
+        "detail": "protobuff.session_pb2",
+        "documentation": {}
+    },
+    {
+        "label": "DESCRIPTOR",
+        "kind": 5,
+        "importPath": "protobuff.session_pb2",
+        "description": "protobuff.session_pb2",
+        "peekOfCode": "DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\\n\\rsession.proto\\x12\\x07session\\\"Z\\n\\x0eSessionRequest\\x12\\x16\\n\\x0cphone_number\\x18\\x01 \\x01(\\tH\\x00\\x12\\x0f\\n\\x05\\x65mail\\x18\\x02 \\x01(\\tH\\x00\\x12\\x10\\n\\x08password\\x18\\x03 \\x01(\\tB\\r\\n\\x0b\\x61uth_method\\\"_\\n\\x0fSessionResponse\\x12\\x14\\n\\x0csession_mark\\x18\\x01 \\x01(\\t\\x12\\x15\\n\\rrefresh_token\\x18\\x02 \\x01(\\t\\x12\\x0f\\n\\x07\\x64\\x65tails\\x18\\x03 \\x01(\\t\\x12\\x0e\\n\\x06status\\x18\\x04 \\x01(\\x05\\x32T\\n\\x0eSessionService\\x12\\x42\\n\\rCreateSession\\x12\\x17.session.SessionRequest\\x1a\\x18.session.SessionResponseb\\x06proto3')\n_globals = globals()\n_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)\n_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'session_pb2', _globals)\nif _descriptor._USE_C_DESCRIPTORS == False:\n  DESCRIPTOR._options = None\n  _globals['_SESSIONREQUEST']._serialized_start=26\n  _globals['_SESSIONREQUEST']._serialized_end=116\n  _globals['_SESSIONRESPONSE']._serialized_start=118\n  _globals['_SESSIONRESPONSE']._serialized_end=213",
+        "detail": "protobuff.session_pb2",
+        "documentation": {}
+    },
+    {
+        "label": "_globals",
+        "kind": 5,
+        "importPath": "protobuff.session_pb2",
+        "description": "protobuff.session_pb2",
+        "peekOfCode": "_globals = globals()\n_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)\n_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'session_pb2', _globals)\nif _descriptor._USE_C_DESCRIPTORS == False:\n  DESCRIPTOR._options = None\n  _globals['_SESSIONREQUEST']._serialized_start=26\n  _globals['_SESSIONREQUEST']._serialized_end=116\n  _globals['_SESSIONRESPONSE']._serialized_start=118\n  _globals['_SESSIONRESPONSE']._serialized_end=213\n  _globals['_SESSIONSERVICE']._serialized_start=215",
+        "detail": "protobuff.session_pb2",
+        "documentation": {}
+    },
+    {
+        "label": "SessionServiceStub",
+        "kind": 6,
+        "importPath": "protobuff.session_pb2_grpc",
+        "description": "protobuff.session_pb2_grpc",
+        "peekOfCode": "class SessionServiceStub(object):\n    \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n    def __init__(self, channel):\n        \"\"\"Constructor.\n        Args:\n            channel: A grpc.Channel.\n        \"\"\"\n        self.CreateSession = channel.unary_unary(\n            \"/session.SessionService/CreateSession\",\n            request_serializer=session__pb2.SessionRequest.SerializeToString,",
+        "detail": "protobuff.session_pb2_grpc",
+        "documentation": {}
+    },
+    {
+        "label": "SessionServiceServicer",
+        "kind": 6,
+        "importPath": "protobuff.session_pb2_grpc",
+        "description": "protobuff.session_pb2_grpc",
+        "peekOfCode": "class SessionServiceServicer(object):\n    \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n    def CreateSession(self, request, context):\n        \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n        context.set_code(grpc.StatusCode.UNIMPLEMENTED)\n        context.set_details(\"Method not implemented!\")\n        raise NotImplementedError(\"Method not implemented!\")\ndef add_SessionServiceServicer_to_server(servicer, server):\n    rpc_method_handlers = {\n        \"CreateSession\": grpc.unary_unary_rpc_method_handler(",
+        "detail": "protobuff.session_pb2_grpc",
+        "documentation": {}
+    },
+    {
+        "label": "SessionService",
+        "kind": 6,
+        "importPath": "protobuff.session_pb2_grpc",
+        "description": "protobuff.session_pb2_grpc",
+        "peekOfCode": "class SessionService(object):\n    \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n    @staticmethod\n    def CreateSession(\n        request,\n        target,\n        options=(),\n        channel_credentials=None,\n        call_credentials=None,\n        insecure=False,",
+        "detail": "protobuff.session_pb2_grpc",
+        "documentation": {}
+    },
+    {
+        "label": "add_SessionServiceServicer_to_server",
+        "kind": 2,
+        "importPath": "protobuff.session_pb2_grpc",
+        "description": "protobuff.session_pb2_grpc",
+        "peekOfCode": "def add_SessionServiceServicer_to_server(servicer, server):\n    rpc_method_handlers = {\n        \"CreateSession\": grpc.unary_unary_rpc_method_handler(\n            servicer.CreateSession,\n            request_deserializer=session__pb2.SessionRequest.FromString,\n            response_serializer=session__pb2.SessionResponse.SerializeToString,\n        ),\n    }\n    generic_handler = grpc.method_handlers_generic_handler(\n        \"session.SessionService\", rpc_method_handlers",
+        "detail": "protobuff.session_pb2_grpc",
+        "documentation": {}
+    },
+    {
+        "label": "_sym_db",
+        "kind": 5,
+        "importPath": "protobuff.user_pb2",
+        "description": "protobuff.user_pb2",
+        "peekOfCode": "_sym_db = _symbol_database.Default()\nDESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\\n\\nuser.proto\\x12\\x04user\\\"\\x95\\x02\\n\\x0fUserPrivateMeta\\x12\\x18\\n\\x0b\\x64ocument_id\\x18\\x01 \\x01(\\tH\\x00\\x88\\x01\\x01\\x12!\\n\\x14\\x64ocument_photo_links\\x18\\x02 \\x01(\\tH\\x01\\x88\\x01\\x01\\x12\\x18\\n\\x0bnationality\\x18\\x03 \\x01(\\tH\\x02\\x88\\x01\\x01\\x12\\x14\\n\\x07mac_ids\\x18\\x04 \\x01(\\tH\\x03\\x88\\x01\\x01\\x12\\x18\\n\\x0bverify_date\\x18\\x05 \\x01(\\tH\\x04\\x88\\x01\\x01\\x12\\x14\\n\\x07\\x62r_date\\x18\\x06 \\x01(\\tH\\x05\\x88\\x01\\x01\\x42\\x0e\\n\\x0c_document_idB\\x17\\n\\x15_document_photo_linksB\\x0e\\n\\x0c_nationalityB\\n\\n\\x08_mac_idsB\\x0e\\n\\x0c_verify_dateB\\n\\n\\x08_br_dateJ\\x04\\x08\\n\\x10\\x10\\\"\\xca\\x02\\n\\x04User\\x12\\r\\n\\x05\\x66name\\x18\\x01 \\x01(\\t\\x12\\r\\n\\x05lname\\x18\\x02 \\x01(\\t\\x12\\x1a\\n\\x05roles\\x18\\x03 \\x03(\\x0e\\x32\\x0b.user.ROLES\\x12\\x12\\n\\x05\\x65mail\\x18\\x04 \\x01(\\tH\\x01\\x88\\x01\\x01\\x12\\x12\\n\\x05phone\\x18\\x05 \\x01(\\tH\\x02\\x88\\x01\\x01\\x12\\x18\\n\\x0bphone_token\\x18\\x06 \\x01(\\tH\\x03\\x88\\x01\\x01\\x12\\x12\\n\\x08password\\x18\\x07 \\x01(\\tH\\x00\\x12\\x19\\n\\x0fhashed_password\\x18\\x08 \\x01(\\tH\\x00\\x12\\x13\\n\\x06\\x61vatar\\x18\\t \\x01(\\x0cH\\x04\\x88\\x01\\x01\\x12/\\n\\x0bprivateMeta\\x18\\n \\x01(\\x0b\\x32\\x15.user.UserPrivateMetaH\\x05\\x88\\x01\\x01\\x42\\x12\\n\\x10password_variantB\\x08\\n\\x06_emailB\\x08\\n\\x06_phoneB\\x0e\\n\\x0c_phone_tokenB\\t\\n\\x07_avatarB\\x0e\\n\\x0c_privateMeta\\\"\\x97\\x01\\n\\x17\\x41vailableFieldsToUpdate\\x12\\x12\\n\\x05\\x66name\\x18\\x01 \\x01(\\tH\\x00\\x88\\x01\\x01\\x12\\x12\\n\\x05lname\\x18\\x02 \\x01(\\tH\\x01\\x88\\x01\\x01\\x12\\x13\\n\\x06\\x61vatar\\x18\\x03 \\x01(\\x0cH\\x02\\x88\\x01\\x01\\x12\\x14\\n\\x07\\x62r_date\\x18\\x04 \\x01(\\tH\\x03\\x88\\x01\\x01\\x42\\x08\\n\\x06_fnameB\\x08\\n\\x06_lnameB\\t\\n\\x07_avatarB\\n\\n\\x08_br_date\\\"r\\n\\rTotalResponse\\x12\\x0f\\n\\x07\\x64\\x65tails\\x18\\x01 \\x01(\\t\\x12\\x0e\\n\\x06status\\x18\\x02 \\x01(\\x05\\x12\\x1a\\n\\x04user\\x18\\x03 \\x01(\\x0b\\x32\\n.user.UserH\\x00\\x12\\x13\\n\\tcondition\\x18\\x04 \\x01(\\x08H\\x00\\x42\\x0f\\n\\rresponse_data\\\"-\\n\\x11\\x43reateUserRequest\\x12\\x18\\n\\x04user\\x18\\x01 \\x01(\\x0b\\x32\\n.user.User\\\"H\\n\\x19OrdinaryUpdateUserRequest\\x12+\\n\\x04user\\x18\\x01 \\x01(\\x0b\\x32\\x1d.user.AvailableFieldsToUpdate\\\"`\\n\\x18\\x43hangePhoneNumberRequest\\x12\\x14\\n\\x0cphone_number\\x18\\x01 \\x01(\\t\\x12\\x13\\n\\x0bverify_code\\x18\\x02 \\x01(\\x05\\x12\\x19\\n\\x11verify_with_email\\x18\\x03 \\x01(\\x08\\\"$\\n\\x11\\x44\\x65leteUserRequest\\x12\\x0f\\n\\x07user_id\\x18\\x03 \\x01(\\x05\\\"4\\n\\x19VerifyUserWithDocsRequest\\x12\\x11\\n\\tdocuments\\x18\\x01 \\x03(\\x0cJ\\x04\\x08\\x05\\x10\\x0b\\\"2\\n\\x15\\x43hangeUserRoleRequest\\x12\\x19\\n\\x04role\\x18\\x01 \\x01(\\x0e\\x32\\x0b.user.ROLES\\\"v\\n UserDataValidationByAdminRequest\\x12\\x1d\\n\\x04user\\x18\\x01 \\x01(\\x0b\\x32\\n.user.UserH\\x00\\x88\\x01\\x01\\x12*\\n\\nconclusion\\x18\\x03 \\x01(\\x0e\\x32\\x16.user.ADMIN_CONCLUSIONB\\x07\\n\\x05_user\\\",\\n\\x16LightVerifyUserRequest\\x12\\x12\\n\\nverify_key\\x18\\x01 \\x01(\\x05*Q\\n\\x10\\x41\\x44MIN_CONCLUSION\\x12\\x13\\n\\x0fUNRELIABLE_DATA\\x10\\x00\\x12\\n\\n\\x06VERIFY\\x10\\x01\\x12\\x16\\n\\x12POOR_QUALITY_PHOTO\\x10\\x02\\\"\\x04\\x08\\x07\\x10\\x0f*P\\n\\x05ROLES\\x12\\x14\\n\\x10ROLE_PORTAL_USER\\x10\\x00\\x12\\x15\\n\\x11ROLE_PORTAL_ADMIN\\x10\\x01\\x12\\x1a\\n\\x16ROLE_PORTAL_SUPERADMIN\\x10\\x02\\x32\\xcd\\x04\\n\\x0bUserService\\x12:\\n\\nCreateUser\\x12\\x17.user.CreateUserRequest\\x1a\\x13.user.TotalResponse\\x12J\\n\\x12OrdinaryUpdateUser\\x12\\x1f.user.OrdinaryUpdateUserRequest\\x1a\\x13.user.TotalResponse\\x12H\\n\\x11\\x43hangePhoneNumber\\x12\\x1e.user.ChangePhoneNumberRequest\\x1a\\x13.user.TotalResponse\\x12:\\n\\nDeleteUser\\x12\\x17.user.DeleteUserRequest\\x1a\\x13.user.TotalResponse\\x12L\\n\\x12VerifyUserWithDocs\\x12\\x1f.user.VerifyUserWithDocsRequest\\x1a\\x13.user.TotalResponse(\\x01\\x12\\x44\\n\\x0fLightVerifyUser\\x12\\x1c.user.LightVerifyUserRequest\\x1a\\x13.user.TotalResponse\\x12\\x42\\n\\x0e\\x43hangeUserRole\\x12\\x1b.user.ChangeUserRoleRequest\\x1a\\x13.user.TotalResponse\\x12X\\n\\x19UserDataValidationByAdmin\\x12&.user.UserDataValidationByAdminRequest\\x1a\\x13.user.TotalResponseb\\x06proto3')\n_globals = globals()\n_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)\n_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'user_pb2', _globals)\nif _descriptor._USE_C_DESCRIPTORS == False:\n  DESCRIPTOR._options = None\n  _globals['_ADMIN_CONCLUSION']._serialized_start=1432\n  _globals['_ADMIN_CONCLUSION']._serialized_end=1513\n  _globals['_ROLES']._serialized_start=1515",
+        "detail": "protobuff.user_pb2",
+        "documentation": {}
+    },
+    {
+        "label": "DESCRIPTOR",
+        "kind": 5,
+        "importPath": "protobuff.user_pb2",
+        "description": "protobuff.user_pb2",
+        "peekOfCode": "DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\\n\\nuser.proto\\x12\\x04user\\\"\\x95\\x02\\n\\x0fUserPrivateMeta\\x12\\x18\\n\\x0b\\x64ocument_id\\x18\\x01 \\x01(\\tH\\x00\\x88\\x01\\x01\\x12!\\n\\x14\\x64ocument_photo_links\\x18\\x02 \\x01(\\tH\\x01\\x88\\x01\\x01\\x12\\x18\\n\\x0bnationality\\x18\\x03 \\x01(\\tH\\x02\\x88\\x01\\x01\\x12\\x14\\n\\x07mac_ids\\x18\\x04 \\x01(\\tH\\x03\\x88\\x01\\x01\\x12\\x18\\n\\x0bverify_date\\x18\\x05 \\x01(\\tH\\x04\\x88\\x01\\x01\\x12\\x14\\n\\x07\\x62r_date\\x18\\x06 \\x01(\\tH\\x05\\x88\\x01\\x01\\x42\\x0e\\n\\x0c_document_idB\\x17\\n\\x15_document_photo_linksB\\x0e\\n\\x0c_nationalityB\\n\\n\\x08_mac_idsB\\x0e\\n\\x0c_verify_dateB\\n\\n\\x08_br_dateJ\\x04\\x08\\n\\x10\\x10\\\"\\xca\\x02\\n\\x04User\\x12\\r\\n\\x05\\x66name\\x18\\x01 \\x01(\\t\\x12\\r\\n\\x05lname\\x18\\x02 \\x01(\\t\\x12\\x1a\\n\\x05roles\\x18\\x03 \\x03(\\x0e\\x32\\x0b.user.ROLES\\x12\\x12\\n\\x05\\x65mail\\x18\\x04 \\x01(\\tH\\x01\\x88\\x01\\x01\\x12\\x12\\n\\x05phone\\x18\\x05 \\x01(\\tH\\x02\\x88\\x01\\x01\\x12\\x18\\n\\x0bphone_token\\x18\\x06 \\x01(\\tH\\x03\\x88\\x01\\x01\\x12\\x12\\n\\x08password\\x18\\x07 \\x01(\\tH\\x00\\x12\\x19\\n\\x0fhashed_password\\x18\\x08 \\x01(\\tH\\x00\\x12\\x13\\n\\x06\\x61vatar\\x18\\t \\x01(\\x0cH\\x04\\x88\\x01\\x01\\x12/\\n\\x0bprivateMeta\\x18\\n \\x01(\\x0b\\x32\\x15.user.UserPrivateMetaH\\x05\\x88\\x01\\x01\\x42\\x12\\n\\x10password_variantB\\x08\\n\\x06_emailB\\x08\\n\\x06_phoneB\\x0e\\n\\x0c_phone_tokenB\\t\\n\\x07_avatarB\\x0e\\n\\x0c_privateMeta\\\"\\x97\\x01\\n\\x17\\x41vailableFieldsToUpdate\\x12\\x12\\n\\x05\\x66name\\x18\\x01 \\x01(\\tH\\x00\\x88\\x01\\x01\\x12\\x12\\n\\x05lname\\x18\\x02 \\x01(\\tH\\x01\\x88\\x01\\x01\\x12\\x13\\n\\x06\\x61vatar\\x18\\x03 \\x01(\\x0cH\\x02\\x88\\x01\\x01\\x12\\x14\\n\\x07\\x62r_date\\x18\\x04 \\x01(\\tH\\x03\\x88\\x01\\x01\\x42\\x08\\n\\x06_fnameB\\x08\\n\\x06_lnameB\\t\\n\\x07_avatarB\\n\\n\\x08_br_date\\\"r\\n\\rTotalResponse\\x12\\x0f\\n\\x07\\x64\\x65tails\\x18\\x01 \\x01(\\t\\x12\\x0e\\n\\x06status\\x18\\x02 \\x01(\\x05\\x12\\x1a\\n\\x04user\\x18\\x03 \\x01(\\x0b\\x32\\n.user.UserH\\x00\\x12\\x13\\n\\tcondition\\x18\\x04 \\x01(\\x08H\\x00\\x42\\x0f\\n\\rresponse_data\\\"-\\n\\x11\\x43reateUserRequest\\x12\\x18\\n\\x04user\\x18\\x01 \\x01(\\x0b\\x32\\n.user.User\\\"H\\n\\x19OrdinaryUpdateUserRequest\\x12+\\n\\x04user\\x18\\x01 \\x01(\\x0b\\x32\\x1d.user.AvailableFieldsToUpdate\\\"`\\n\\x18\\x43hangePhoneNumberRequest\\x12\\x14\\n\\x0cphone_number\\x18\\x01 \\x01(\\t\\x12\\x13\\n\\x0bverify_code\\x18\\x02 \\x01(\\x05\\x12\\x19\\n\\x11verify_with_email\\x18\\x03 \\x01(\\x08\\\"$\\n\\x11\\x44\\x65leteUserRequest\\x12\\x0f\\n\\x07user_id\\x18\\x03 \\x01(\\x05\\\"4\\n\\x19VerifyUserWithDocsRequest\\x12\\x11\\n\\tdocuments\\x18\\x01 \\x03(\\x0cJ\\x04\\x08\\x05\\x10\\x0b\\\"2\\n\\x15\\x43hangeUserRoleRequest\\x12\\x19\\n\\x04role\\x18\\x01 \\x01(\\x0e\\x32\\x0b.user.ROLES\\\"v\\n UserDataValidationByAdminRequest\\x12\\x1d\\n\\x04user\\x18\\x01 \\x01(\\x0b\\x32\\n.user.UserH\\x00\\x88\\x01\\x01\\x12*\\n\\nconclusion\\x18\\x03 \\x01(\\x0e\\x32\\x16.user.ADMIN_CONCLUSIONB\\x07\\n\\x05_user\\\",\\n\\x16LightVerifyUserRequest\\x12\\x12\\n\\nverify_key\\x18\\x01 \\x01(\\x05*Q\\n\\x10\\x41\\x44MIN_CONCLUSION\\x12\\x13\\n\\x0fUNRELIABLE_DATA\\x10\\x00\\x12\\n\\n\\x06VERIFY\\x10\\x01\\x12\\x16\\n\\x12POOR_QUALITY_PHOTO\\x10\\x02\\\"\\x04\\x08\\x07\\x10\\x0f*P\\n\\x05ROLES\\x12\\x14\\n\\x10ROLE_PORTAL_USER\\x10\\x00\\x12\\x15\\n\\x11ROLE_PORTAL_ADMIN\\x10\\x01\\x12\\x1a\\n\\x16ROLE_PORTAL_SUPERADMIN\\x10\\x02\\x32\\xcd\\x04\\n\\x0bUserService\\x12:\\n\\nCreateUser\\x12\\x17.user.CreateUserRequest\\x1a\\x13.user.TotalResponse\\x12J\\n\\x12OrdinaryUpdateUser\\x12\\x1f.user.OrdinaryUpdateUserRequest\\x1a\\x13.user.TotalResponse\\x12H\\n\\x11\\x43hangePhoneNumber\\x12\\x1e.user.ChangePhoneNumberRequest\\x1a\\x13.user.TotalResponse\\x12:\\n\\nDeleteUser\\x12\\x17.user.DeleteUserRequest\\x1a\\x13.user.TotalResponse\\x12L\\n\\x12VerifyUserWithDocs\\x12\\x1f.user.VerifyUserWithDocsRequest\\x1a\\x13.user.TotalResponse(\\x01\\x12\\x44\\n\\x0fLightVerifyUser\\x12\\x1c.user.LightVerifyUserRequest\\x1a\\x13.user.TotalResponse\\x12\\x42\\n\\x0e\\x43hangeUserRole\\x12\\x1b.user.ChangeUserRoleRequest\\x1a\\x13.user.TotalResponse\\x12X\\n\\x19UserDataValidationByAdmin\\x12&.user.UserDataValidationByAdminRequest\\x1a\\x13.user.TotalResponseb\\x06proto3')\n_globals = globals()\n_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)\n_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'user_pb2', _globals)\nif _descriptor._USE_C_DESCRIPTORS == False:\n  DESCRIPTOR._options = None\n  _globals['_ADMIN_CONCLUSION']._serialized_start=1432\n  _globals['_ADMIN_CONCLUSION']._serialized_end=1513\n  _globals['_ROLES']._serialized_start=1515\n  _globals['_ROLES']._serialized_end=1595",
+        "detail": "protobuff.user_pb2",
+        "documentation": {}
+    },
+    {
+        "label": "_globals",
+        "kind": 5,
+        "importPath": "protobuff.user_pb2",
+        "description": "protobuff.user_pb2",
+        "peekOfCode": "_globals = globals()\n_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)\n_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'user_pb2', _globals)\nif _descriptor._USE_C_DESCRIPTORS == False:\n  DESCRIPTOR._options = None\n  _globals['_ADMIN_CONCLUSION']._serialized_start=1432\n  _globals['_ADMIN_CONCLUSION']._serialized_end=1513\n  _globals['_ROLES']._serialized_start=1515\n  _globals['_ROLES']._serialized_end=1595\n  _globals['_USERPRIVATEMETA']._serialized_start=21",
+        "detail": "protobuff.user_pb2",
+        "documentation": {}
+    },
+    {
+        "label": "UserServiceStub",
+        "kind": 6,
+        "importPath": "protobuff.user_pb2_grpc",
+        "description": "protobuff.user_pb2_grpc",
+        "peekOfCode": "class UserServiceStub:\n    \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n    def __init__(self, channel):\n        \"\"\"Constructor.\n        Args:\n            channel: A grpc.Channel.\n        \"\"\"\n        self.CreateUser = channel.unary_unary(\n            \"/user.UserService/CreateUser\",\n            request_serializer=user__pb2.CreateUserRequest.SerializeToString,",
+        "detail": "protobuff.user_pb2_grpc",
+        "documentation": {}
+    },
+    {
+        "label": "UserServiceServicer",
+        "kind": 6,
+        "importPath": "protobuff.user_pb2_grpc",
+        "description": "protobuff.user_pb2_grpc",
+        "peekOfCode": "class UserServiceServicer:\n    \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n    def CreateUser(self, request, context):\n        \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n        context.set_code(grpc.StatusCode.UNIMPLEMENTED)\n        context.set_details(\"Method not implemented!\")\n        raise NotImplementedError(\"Method not implemented!\")\n    def OrdinaryUpdateUser(self, request, context):\n        \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n        context.set_code(grpc.StatusCode.UNIMPLEMENTED)",
+        "detail": "protobuff.user_pb2_grpc",
+        "documentation": {}
+    },
+    {
+        "label": "UserService",
+        "kind": 6,
+        "importPath": "protobuff.user_pb2_grpc",
+        "description": "protobuff.user_pb2_grpc",
+        "peekOfCode": "class UserService:\n    \"\"\"Missing associated documentation comment in .proto file.\"\"\"\n    @staticmethod\n    def CreateUser(\n        request,\n        target,\n        options=(),\n        channel_credentials=None,\n        call_credentials=None,\n        insecure=False,",
+        "detail": "protobuff.user_pb2_grpc",
+        "documentation": {}
+    },
+    {
+        "label": "add_UserServiceServicer_to_server",
+        "kind": 2,
+        "importPath": "protobuff.user_pb2_grpc",
+        "description": "protobuff.user_pb2_grpc",
+        "peekOfCode": "def add_UserServiceServicer_to_server(servicer, server):\n    rpc_method_handlers = {\n        \"CreateUser\": grpc.unary_unary_rpc_method_handler(\n            servicer.CreateUser,\n            request_deserializer=user__pb2.CreateUserRequest.FromString,\n            response_serializer=user__pb2.TotalResponse.SerializeToString,\n        ),\n        \"OrdinaryUpdateUser\": grpc.unary_unary_rpc_method_handler(\n            servicer.OrdinaryUpdateUser,\n            request_deserializer=user__pb2.OrdinaryUpdateUserRequest.FromString,",
+        "detail": "protobuff.user_pb2_grpc",
+        "documentation": {}
+    },
+    {
+        "label": "healthcheck",
+        "kind": 2,
+        "importPath": "client",
+        "description": "client",
+        "peekOfCode": "def healthcheck():\n    \"\"\"\n    Check the health of the application.\n    \"\"\"\n    return JSONResponse(content={\"status\": \"ok\"})",
+        "detail": "client",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "client",
+        "description": "client",
+        "peekOfCode": "token = \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZuYW1lIjoiaGVsbG8zIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzX3ZlcmlmeSI6ZmFsc2UsInVzZXJfaWQiOjI0LCJpZCI6MjQsImxuYW1lIjoic29tZSIsInBob25lIjoiKzM4MDkzMDk3MDA5MCIsIm1hY19pZHMiOlsiMjM6MzM6MzQ6NDQ6NjYiXSwiY3JlYXRlX2F0IjoiMDk6MDU6MjQgMTI6MTY6MjgiLCJoYXNoZWRfcGFzc3dvcmQiOiIkMmIkMTIkWm81dVhvejhxQnpoNGhFOXIubk8zZVhsTDBBckJNS2xiNUxIZ2JxRHFYaEdkUUhxTFpuZXkiLCJyb2xlcyI6WyJST0xFX1BPUlRBTF9VU0VSIl0sInVwZGF0ZWRfYWNjb3VudCI6IjA5OjA1OjI0IDEyOjE2OjI4In0sImV4cCI6IjE3MTU4OTc5ODA2NzIifQ.vY1AOAmqOY5pIE5GUWX0DwQCKbsYiHzZ5Le5m3fkj9I\"\napp = FastAPI(\n    title=\"User test\",\n    version=\"0.0.1\",\n    terms_of_service=\"http://example.com/terms/\",\n    license_info={\"name\": \"MIT\"},\n    docs_url=\"/swagger\",\n)\n\"\"\"\n    fname: Optional[str] = None,",
+        "detail": "client",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "client",
+        "description": "client",
+        "peekOfCode": "app = FastAPI(\n    title=\"User test\",\n    version=\"0.0.1\",\n    terms_of_service=\"http://example.com/terms/\",\n    license_info={\"name\": \"MIT\"},\n    docs_url=\"/swagger\",\n)\n\"\"\"\n    fname: Optional[str] = None,\n    lname: Optional[str] = None,",
+        "detail": "client",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "token = \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZuYW1lIjoiaGVsbG8zIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzX3ZlcmlmeSI6ZmFsc2UsInVzZXJfaWQiOjI0LCJpZCI6MjQsImxuYW1lIjoic29tZSIsInBob25lIjoiKzM4MDkzMDk3MDA5MCIsIm1hY19pZHMiOlsiMjM6MzM6MzQ6NDQ6NjYiXSwiY3JlYXRlX2F0IjoiMDk6MDU6MjQgMTI6MTY6MjgiLCJoYXNoZWRfcGFzc3dvcmQiOiIkMmIkMTIkWm81dVhvejhxQnpoNGhFOXIubk8zZVhsTDBBckJNS2xiNUxIZ2JxRHFYaEdkUUhxTFpuZXkiLCJyb2xlcyI6WyJST0xFX1BPUlRBTF9VU0VSIl0sInVwZGF0ZWRfYWNjb3VudCI6IjA5OjA1OjI0IDEyOjE2OjI4In0sImV4cCI6IjE3MTU4OTc5ODA2NzIifQ.vY1AOAmqOY5pIE5GUWX0DwQCKbsYiHzZ5Le5m3fkj9I\"\nfrom settings import settings\nasync def serve():\n    server = aio.server(interceptors=(AuthInterceptor(),))\n    user_services.add_UserServiceServicer_to_server(AuthServiceServicer(), server)\n    session_services.add_SessionServiceServicer_to_server(AuthServiceServicer(), server)\n    server.add_insecure_port(f\"{settings.HOST_GRPC}:{settings.PORT_GRPC}\")\n    await server.start()\n    _logger.info(\n        f\"GRPC server starting in {settings.HOST_GRPC}:{settings.PORT_GRPC}\",",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "settings",
+        "description": "settings",
+        "peekOfCode": "class Settings(BaseSettings):\n    POSTGRES_USER: str\n    POSTGRES_DB: str\n    POSTGRES_PASSWORD: int\n    DB_PORT: int\n    DB_HOST: str\n    HOST_GRPC: str\n    PORT_GRPC: int\n    ACCESS_TOKEN_EXPIRE_MINUTES: int\n    ALGORITHM: str",
+        "detail": "settings",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "settings",
+        "description": "settings",
+        "peekOfCode": "settings = Settings()",
+        "detail": "settings",
+        "documentation": {}
+    }
+]

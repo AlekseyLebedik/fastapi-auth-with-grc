@@ -1,16 +1,15 @@
-import os
-from typing import Annotated, List, Optional
+from typing import Optional
 
-import grpc as g
-from core.db.user_dals import createUser, currentUser, ordinaryUpdateUser
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
+from pydantic import EmailStr
+
+from core.db.user_dals import createUser, getUser
 from core.pydantic_models.type import PasswordType, PhoneType
 from core.utils import _logger
 from core.utils.channels import createClientChannel
-from fastapi import Depends, FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse
+from core.utils.session_store.store import session_store
 from protobuff import session_models, session_services, user_models, user_services
-from pydantic import EmailStr
-from settings import settings
 
 token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZuYW1lIjoiaGVsbG8zIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzX3ZlcmlmeSI6ZmFsc2UsInVzZXJfaWQiOjI0LCJpZCI6MjQsImxuYW1lIjoic29tZSIsInBob25lIjoiKzM4MDkzMDk3MDA5MCIsIm1hY19pZHMiOlsiMjM6MzM6MzQ6NDQ6NjYiXSwiY3JlYXRlX2F0IjoiMDk6MDU6MjQgMTI6MTY6MjgiLCJoYXNoZWRfcGFzc3dvcmQiOiIkMmIkMTIkWm81dVhvejhxQnpoNGhFOXIubk8zZVhsTDBBckJNS2xiNUxIZ2JxRHFYaEdkUUhxTFpuZXkiLCJyb2xlcyI6WyJST0xFX1BPUlRBTF9VU0VSIl0sInVwZGF0ZWRfYWNjb3VudCI6IjA5OjA1OjI0IDEyOjE2OjI4In0sImV4cCI6IjE3MTU4OTc5ODA2NzIifQ.vY1AOAmqOY5pIE5GUWX0DwQCKbsYiHzZ5Le5m3fkj9I"
 
@@ -59,14 +58,15 @@ async def ordinary_update_user(
     phone: Optional[PhoneType] = None,
 ):
     try:
-        user = await createUser(
-            password=password,
-            lname=lname,
-            fname=fname,
-            email=email,
-            phone=phone,
-            mac_id=["20:23:30:39:59"],
-        )
+        _logger.error(session_store._items)
+        # user = await createUser(
+        #     password=password,
+        #     lname=lname,
+        #     fname=fname,
+        #     email=email,
+        #     phone=phone,
+        #     mac_id=["20:23:30:39:59"],
+        # )
     except Exception as reason:
         raise HTTPException(
             status_code=404,
@@ -100,6 +100,36 @@ async def grpc_create(
             _logger.info(response)
     except Exception as ex:
         _logger.error(ex)
+
+
+@app.post("/create_session")
+async def createSession(
+    password: str,
+    email: Optional[str] = None,
+    phone: Optional[str] = None,
+):
+    try:
+        async with createClientChannel() as channel:
+            stub = session_services.SessionServiceStub(channel)
+            request = session_models.SessionRequest(
+                password=password,
+                phone_number=phone,
+                email=email,
+            )
+            response: session_models.SessionResponse = await stub.CreateSession(request)
+
+            return JSONResponse(
+                content={
+                    "session_mark": response.session_mark,
+                    "details": response.details,
+                    "refresh_token": response.refresh_token,
+                },
+                status_code=response.status,
+            )
+
+    except Exception as ex:
+        _logger.error(ex)
+        pass
 
 
 @app.get("/healthcheck")
