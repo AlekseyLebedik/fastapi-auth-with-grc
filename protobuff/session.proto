@@ -1,9 +1,42 @@
 syntax="proto3";
 
 package session;
+import "user.proto";
 
 service SessionService {
-    rpc CreateSession(stream SessionRequest) returns (stream SessionResponse);
+    rpc CreateSession(SessionRequest) returns (SessionResponse);
+    rpc ConditionSessionStream(stream ConditionSessionRequest) returns (stream ConditionSessionResponse);
+}
+
+enum StateSessionEnum {
+    REFUSE=0;
+    EXTENDING=1;
+    ME=2;
+}
+
+enum StreamConditionEnum {
+    CONTINUE=0;
+    CLOSE=1;
+}
+
+message ConditionSessionRequest {
+    StateSessionEnum state = 1;
+    StreamConditionEnum stream_condition = 2;
+    optional string session_mark = 3;
+    optional string refresh_token = 4;
+}
+
+
+message ConditionSessionResponse {
+    oneof condition_state {
+        string session_mark = 1;
+        bool destroy_session = 2; 
+        user.User user = 3;
+        bool isError = 5;
+    }
+    string details = 6;
+    int32 status = 7;
+    StreamConditionEnum stream_condition = 8;
 }
 
 

@@ -28,7 +28,7 @@ enum ROLES {
 
 message UserPrivateMeta {
     optional string document_id = 1;
-    optional string document_photo_links = 2;
+    repeated string document_photo_links = 2;
     optional string nationality = 3;
     optional string mac_ids = 4;
     optional string verify_date = 5;

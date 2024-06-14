@@ -1,9 +1,8 @@
 from datetime import datetime
 
-from pydantic import BaseModel
-
 from core.pydantic_models.user import User
 from core.utils.expire_time import setExpireTime
+from pydantic import BaseModel
 
 
 class SessionNode(BaseModel):

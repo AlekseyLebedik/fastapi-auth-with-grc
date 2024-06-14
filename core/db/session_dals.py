@@ -16,9 +16,14 @@ async def createSession(
     email: t.Optional[EmailType] = None,
     phone: t.Optional[PhoneType] = None,
 ):
+    from loguru import logger
+
+    logger.warning("HELLO")
     async with getSession() as session:
         session_mark = str(uuid4())
+
         user = await getUser(password, session, email, phone)
+
         session_store.set_session(
             key=session_mark,
             user=User(**user.dump_to_dict(with_private_meta=True)),

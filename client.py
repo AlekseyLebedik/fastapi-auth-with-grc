@@ -1,7 +1,13 @@
+import re
+from asyncio import sleep
+from threading import Event
 from typing import Optional
 
+import google.protobuf.json_format
+import grpc
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
+from google.protobuf.json_format import MessageToDict, MessageToJson
 from pydantic import EmailStr
 
 from core.db.user_dals import createUser, getUser
@@ -20,20 +26,6 @@ app = FastAPI(
     license_info={"name": "MIT"},
     docs_url="/swagger",
 )
-
-
-"""
-    fname: Optional[str] = None,
-    lname: Optional[str] = None,
-    br_date: Optional[str] = None,
-    document_id: Optional[str] = None,
-    document_photo_links: Optional[List[str]] = None,
-    avatar: Optional[str] = None,
-    nationality: Optional[str] = None,
-    mac_ids: Optional[List[str]] = None,
-    is_verify: Optional[bool] = None,
-    verify_date: Optional[str] = None,
-"""
 
 
 @app.delete("/delete_user")
@@ -129,6 +121,25 @@ async def createSession(
 
     except Exception as ex:
         _logger.error(ex)
+        pass
+
+
+@app.post("/condition_session")
+async def ConditionSession(session_mark: str):
+    try:
+        async with createClientChannel() as channel:
+            stub = session_services.SessionServiceStub(channel)
+            request = session_models.ConditionSessionRequest(
+                state=session_models.StateSessionEnum.ME,
+                stream_condition=session_models.StreamConditionEnum.CONTINUE,
+                session_mark=session_mark,
+            )
+            async for response in stub.ConditionSessionStream(iter((request,))):
+                _logger.warning(f"details = {response}")
+                return MessageToJson(response)
+
+    except Exception as ex:
+        _logger.error(ex, "<<<<<<<")
         pass
 
 

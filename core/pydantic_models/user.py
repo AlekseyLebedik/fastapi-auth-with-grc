@@ -1,10 +1,9 @@
 from datetime import datetime
 from typing import List, Optional
 
-from pydantic import BaseModel, EmailStr
-
 from core.utils import convertFromComplexType
 from protobuff import user_models as proto_models
+from pydantic import BaseModel, EmailStr
 
 from . import models_enum as Enums
 
@@ -19,7 +18,7 @@ class User(BaseModel):
     phone_token: Optional[str] = None
     br_date: Optional[str] = None
     document_id: Optional[str] = None
-    document_photo_links: Optional[str] = None
+    document_photo_links: Optional[list[str]] = None
     avatar: Optional[str] = None
     nationality: Optional[str] = None
     mac_ids: Optional[List[str]] = []
@@ -30,10 +29,10 @@ class User(BaseModel):
 
     def proto_user(
         self,
-        withPrivateField: bool = False,
+        with_private_field: bool = False,
     ):
         private_meta = None
-        if withPrivateField:
+        if with_private_field:
             private_meta = proto_models.UserPrivateMeta(
                 document_id=self.document_id,
                 document_photo_links=self.document_photo_links,

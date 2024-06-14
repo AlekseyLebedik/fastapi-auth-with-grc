@@ -5,7 +5,7 @@ from .models import SessionNode
 
 class SessionStore:
     def __init__(self) -> None:
-        self._sessions: dict = {}
+        self._sessions: dict[str, SessionNode] = {}
         self._cache: dict = {}
 
     def set_session(self, key: str, user: User, session_mark: str):

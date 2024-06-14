@@ -38,7 +38,7 @@ def extratypeDecorator(entry_key=None):
                     extraValueCheck(key, proto_dict.get(key))
                 return await func(self, request, context)
             except IncorectValueType as ivc:
-                exceptionHandlingWithContext(context, ivc)
+                await exceptionHandlingWithContext(context, ivc)
 
         def syncWrapper(self, request, context):
             proto_dict = (

@@ -1,5 +1,6 @@
 from .db import DBCreate, DoNotValidCredential
 from .jwt import HaventToken, NoValidTokenRaw
+from .stream import CloseStreamException
 from .time import IncorrectTimeStr
 from .type import IncorectValueType
 
@@ -10,4 +11,5 @@ __all__ = [
     "NoValidTokenRaw",
     "HaventToken",
     "IncorectValueType",
+    "CloseStreamException",
 ]

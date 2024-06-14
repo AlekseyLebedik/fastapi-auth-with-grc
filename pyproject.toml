@@ -48,6 +48,7 @@ urllib3 = "^2.2.1"
 python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 loguru = "^0.7.2"
 ruff = "^0.4.6"
+python-event-bus = "^1.2.0"
 
 
 [build-system]

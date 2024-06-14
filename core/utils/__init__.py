@@ -1,6 +1,6 @@
 from .decorators import noneMethodUserDecorator
 from .dump_to_dict import convertFromComplexType, dumpToDict
-from .exceptions import exceptionHandlingWithContext
+from .exceptions import exceptionHandlingWithContext, isErrorHandlingWithContext
 from .expire_time import setExpireTime
 from .jwt import RequestDateType, createAccessToken, createRefreshToken, decodeJwtToken
 from .logger import _logger
@@ -26,4 +26,5 @@ __all__ = [
     "decodeJwtToken",
     "nestedGet",
     "exceptionHandlingWithContext",
+    "isErrorHandlingWithContext",
 ]

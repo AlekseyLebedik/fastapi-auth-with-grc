@@ -7,24 +7,35 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
 from google.protobuf import symbol_database as _symbol_database
 from google.protobuf.internal import builder as _builder
+
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
 
 
+from . import user_pb2 as user__pb2
 
-
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rsession.proto\x12\x07session\"Z\n\x0eSessionRequest\x12\x16\n\x0cphone_number\x18\x01 \x01(\tH\x00\x12\x0f\n\x05\x65mail\x18\x02 \x01(\tH\x00\x12\x10\n\x08password\x18\x03 \x01(\tB\r\n\x0b\x61uth_method\"_\n\x0fSessionResponse\x12\x14\n\x0csession_mark\x18\x01 \x01(\t\x12\x15\n\rrefresh_token\x18\x02 \x01(\t\x12\x0f\n\x07\x64\x65tails\x18\x03 \x01(\t\x12\x0e\n\x06status\x18\x04 \x01(\x05\x32T\n\x0eSessionService\x12\x42\n\rCreateSession\x12\x17.session.SessionRequest\x1a\x18.session.SessionResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(
+    b'\n\rsession.proto\x12\x07session\x1a\nuser.proto"\xd5\x01\n\x17\x43onditionSessionRequest\x12(\n\x05state\x18\x01 \x01(\x0e\x32\x19.session.StateSessionEnum\x12\x36\n\x10stream_condition\x18\x02 \x01(\x0e\x32\x1c.session.StreamConditionEnum\x12\x19\n\x0csession_mark\x18\x03 \x01(\tH\x00\x88\x01\x01\x12\x1a\n\rrefresh_token\x18\x04 \x01(\tH\x01\x88\x01\x01\x42\x0f\n\r_session_markB\x10\n\x0e_refresh_token"\xe8\x01\n\x18\x43onditionSessionResponse\x12\x16\n\x0csession_mark\x18\x01 \x01(\tH\x00\x12\x19\n\x0f\x64\x65stroy_session\x18\x02 \x01(\x08H\x00\x12\x1a\n\x04user\x18\x03 \x01(\x0b\x32\n.user.UserH\x00\x12\x11\n\x07isError\x18\x05 \x01(\x08H\x00\x12\x0f\n\x07\x64\x65tails\x18\x06 \x01(\t\x12\x0e\n\x06status\x18\x07 \x01(\x05\x12\x36\n\x10stream_condition\x18\x08 \x01(\x0e\x32\x1c.session.StreamConditionEnumB\x11\n\x0f\x63ondition_state"Z\n\x0eSessionRequest\x12\x16\n\x0cphone_number\x18\x01 \x01(\tH\x00\x12\x0f\n\x05\x65mail\x18\x02 \x01(\tH\x00\x12\x10\n\x08password\x18\x03 \x01(\tB\r\n\x0b\x61uth_method"_\n\x0fSessionResponse\x12\x14\n\x0csession_mark\x18\x01 \x01(\t\x12\x15\n\rrefresh_token\x18\x02 \x01(\t\x12\x0f\n\x07\x64\x65tails\x18\x03 \x01(\t\x12\x0e\n\x06status\x18\x04 \x01(\x05*5\n\x10StateSessionEnum\x12\n\n\x06REFUSE\x10\x00\x12\r\n\tEXTENDING\x10\x01\x12\x06\n\x02ME\x10\x02*.\n\x13StreamConditionEnum\x12\x0c\n\x08\x43ONTINUE\x10\x00\x12\t\n\x05\x43LOSE\x10\x01\x32\xb7\x01\n\x0eSessionService\x12\x42\n\rCreateSession\x12\x17.session.SessionRequest\x1a\x18.session.SessionResponse\x12\x61\n\x16\x43onditionSessionStream\x12 .session.ConditionSessionRequest\x1a!.session.ConditionSessionResponse(\x01\x30\x01\x62\x06proto3'
+)
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'session_pb2', _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, "session_pb2", _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
-  DESCRIPTOR._options = None
-  _globals['_SESSIONREQUEST']._serialized_start=26
-  _globals['_SESSIONREQUEST']._serialized_end=116
-  _globals['_SESSIONRESPONSE']._serialized_start=118
-  _globals['_SESSIONRESPONSE']._serialized_end=213
-  _globals['_SESSIONSERVICE']._serialized_start=215
-  _globals['_SESSIONSERVICE']._serialized_end=299
+    DESCRIPTOR._options = None
+    _globals["_STATESESSIONENUM"]._serialized_start = 678
+    _globals["_STATESESSIONENUM"]._serialized_end = 731
+    _globals["_STREAMCONDITIONENUM"]._serialized_start = 733
+    _globals["_STREAMCONDITIONENUM"]._serialized_end = 779
+    _globals["_CONDITIONSESSIONREQUEST"]._serialized_start = 39
+    _globals["_CONDITIONSESSIONREQUEST"]._serialized_end = 252
+    _globals["_CONDITIONSESSIONRESPONSE"]._serialized_start = 255
+    _globals["_CONDITIONSESSIONRESPONSE"]._serialized_end = 487
+    _globals["_SESSIONREQUEST"]._serialized_start = 489
+    _globals["_SESSIONREQUEST"]._serialized_end = 579
+    _globals["_SESSIONRESPONSE"]._serialized_start = 581
+    _globals["_SESSIONRESPONSE"]._serialized_end = 676
+    _globals["_SESSIONSERVICE"]._serialized_start = 782
+    _globals["_SESSIONSERVICE"]._serialized_end = 965
 # @@protoc_insertion_point(module_scope)

@@ -19,12 +19,23 @@ class SessionServiceStub(object):
             request_serializer=session__pb2.SessionRequest.SerializeToString,
             response_deserializer=session__pb2.SessionResponse.FromString,
         )
+        self.ConditionSessionStream = channel.stream_stream(
+            "/session.SessionService/ConditionSessionStream",
+            request_serializer=session__pb2.ConditionSessionRequest.SerializeToString,
+            response_deserializer=session__pb2.ConditionSessionResponse.FromString,
+        )
 
 
 class SessionServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
     def CreateSession(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details("Method not implemented!")
+        raise NotImplementedError("Method not implemented!")
+
+    def ConditionSessionStream(self, request_iterator, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details("Method not implemented!")
@@ -37,6 +48,11 @@ def add_SessionServiceServicer_to_server(servicer, server):
             servicer.CreateSession,
             request_deserializer=session__pb2.SessionRequest.FromString,
             response_serializer=session__pb2.SessionResponse.SerializeToString,
+        ),
+        "ConditionSessionStream": grpc.stream_stream_rpc_method_handler(
+            servicer.ConditionSessionStream,
+            request_deserializer=session__pb2.ConditionSessionRequest.FromString,
+            response_serializer=session__pb2.ConditionSessionResponse.SerializeToString,
         ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -68,6 +84,35 @@ class SessionService(object):
             "/session.SessionService/CreateSession",
             session__pb2.SessionRequest.SerializeToString,
             session__pb2.SessionResponse.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+        )
+
+    @staticmethod
+    def ConditionSessionStream(
+        request_iterator,
+        target,
+        options=(),
+        channel_credentials=None,
+        call_credentials=None,
+        insecure=False,
+        compression=None,
+        wait_for_ready=None,
+        timeout=None,
+        metadata=None,
+    ):
+        return grpc.experimental.stream_stream(
+            request_iterator,
+            target,
+            "/session.SessionService/ConditionSessionStream",
+            session__pb2.ConditionSessionRequest.SerializeToString,
+            session__pb2.ConditionSessionResponse.FromString,
             options,
             channel_credentials,
             insecure,

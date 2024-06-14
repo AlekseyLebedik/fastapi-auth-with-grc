@@ -30,13 +30,13 @@ async def createClientChannelWithToken(token):
 
 @logger.catch
 @asynccontextmanager
-async def createClientChannel():
+async def createClientChannel(auto_close=True):
     channel: Channel = None
     try:
         channel = aio.insecure_channel(_SERVER_ADDR_CHANNEL)
         logger.info("Successfully opened channel...")
         yield channel
     finally:
-        if channel:
+        if channel and auto_close:
             logger.info("Closing channel...")
             await channel.close()
