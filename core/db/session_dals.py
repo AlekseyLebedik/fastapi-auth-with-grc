@@ -16,9 +16,6 @@ async def createSession(
     email: t.Optional[EmailType] = None,
     phone: t.Optional[PhoneType] = None,
 ):
-    from loguru import logger
-
-    logger.warning("HELLO")
     async with getSession() as session:
         session_mark = str(uuid4())
 
@@ -30,9 +27,19 @@ async def createSession(
             session_mark=session_mark,
         )
         refresh_token = createRefreshToken(user.email, user.phone_token)
+
         return session_models.SessionResponse(
             session_mark=session_mark,
             refresh_token=refresh_token,
             details="You have successfully created a session.",
             status=200,
         )
+
+
+async def updateSession(prev_session_mark: str):
+    next_session_mark = str(uuid4())
+
+    session = session_store.get_session(prev_session_mark)
+
+    if session:
+        pass

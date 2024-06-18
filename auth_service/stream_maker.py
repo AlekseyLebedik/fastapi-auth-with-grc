@@ -1,13 +1,13 @@
 import asyncio
-import random
 import typing as t
 from enum import Enum
 
 from loguru import logger
 from python_event_bus import EventBus
 
+from core.db.session_dals import createAccessToken
 from core.exceptions import CloseStreamException
-from core.utils.logger import _logger
+from core.utils.data_structure import Queue
 from core.utils.session_store.store import session_store
 from protobuff import session_models
 
@@ -34,9 +34,9 @@ def _marker_asyncio(prefix: t.Optional[str] = "request"):
 
 class ServerStreamMaker:
     def __init__(self) -> None:
-        self.response = []
+        self.response_queue = Queue()
         self.response_event = asyncio.Event()
-        self.store = session_store
+        self._store = session_store
         self._tasks: t.Dict[str, t.Tuple[asyncio.Task, t.Callable]] = {}
         self._close_stream_event = asyncio.Event()
         self._closing_event = asyncio.Event()
@@ -73,14 +73,15 @@ class ServerStreamMaker:
             )
 
     def response_watcher(self, data):
-        self.response.append(data)
+        self.response_queue.enqueue(data)
         self.response_event.set()
 
     async def stream(self):
         while not self._close_stream_event.is_set():
             await self.response_event.wait()
-            if len(self.response) > 0:
-                response = self.response.pop()
+
+            if not self.response_queue.isEmpty():
+                response = self.response_queue.dequeue().value
                 yield response
             else:
                 await self.__check_condition_stream()
@@ -96,7 +97,7 @@ class ServerStreamMaker:
         name_request: str,
     ):
         try:
-            session = self.store.get_session(request.session_mark)
+            session = self._store.get_session(request.session_mark)
             if session:
                 user = session.user.proto_user()
                 return session_models.ConditionSessionResponse(
@@ -132,14 +133,46 @@ class ServerStreamMaker:
         request: session_models.ConditionSessionRequest,
         name_request: str,
     ):
-        pass
+        try:
+            self._store.refuse_session(request.session_mark)
+            return session_models.ConditionSessionResponse(
+                destroy_session=True,
+                stream_condition=self._stream_condition,
+                details="You have successfully deleted the session!",
+                status=StatusHttpGrpc.HTTP_200_OK.http,
+            )
+        except Exception as ex:
+            details = ex.details if hasattr(ex, "details") else ex
+            status = (
+                ex.status
+                if hasattr(ex, "status")
+                else StatusHttpGrpc.HTTP_409_CONFLICT.grpc
+            )
+            logger.error(f"Request {name_request} was cancelled! With Exception = {ex}")
+
+            return session_models.ConditionSessionResponse(
+                isError=True,
+                stream_condition=self._stream_condition,
+                details=details,
+                status=status,
+            )
+
+        finally:
+            if self._tasks.get(name_request):
+                self._tasks.pop(name_request)
 
     async def __extending_request(
         self,
         request: session_models.ConditionSessionRequest,
         name_request: str,
     ):
-        pass
+        try:
+            pass
+        except Exception as ex:
+            pass
+        finally:
+            if self._tasks.get(name_request):
+                self._tasks.pop(name_request)
 
     """
         HANDLERS METHOD:

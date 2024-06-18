@@ -20,7 +20,7 @@ class LinkedListNode(t.Generic[T]):
 
 
 class LinkedList(t.Generic[T]):
-    def __init__(self, comperatorFunction) -> None:
+    def __init__(self, comperatorFunction: t.Optional[t.Callable] = None) -> None:
         self.head = None
         self.tail = None
         self.size = 0

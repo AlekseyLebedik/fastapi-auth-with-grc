@@ -12,7 +12,6 @@ from protobuff import session_models, session_services, user_models, user_servic
 
 from .extratype_decorator import extratypeDecorator
 from .methods import MethodsEnum
-from .status import StatusCode
 from .stream_maker import ServerStreamMaker
 
 stream = None

@@ -34,13 +34,13 @@ def isErrorHandlingWithContext(
     context: g.ServicerContext,
     response: ResponseT,
 ) -> t.Union[ResponseT, None]:
-    from auth_service.status import StatusCode
+    from auth_service.status import StatusHttpGrpc
 
     if response.HasField("isError") and response.status and response.details:
         return _contextErrorHandler(
             context,
             response.details,
-            StatusCode.get_grpc_code(response.status),
+            StatusHttpGrpc.get_grpc_code(response.status),
         )
 
     return response

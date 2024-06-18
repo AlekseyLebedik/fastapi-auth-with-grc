@@ -143,6 +143,25 @@ async def ConditionSession(session_mark: str):
         pass
 
 
+@app.post("/refuse_session")
+async def RefuseSession(session_mark: str):
+    try:
+        async with createClientChannel() as channel:
+            stub = session_services.SessionServiceStub(channel)
+            request = session_models.ConditionSessionRequest(
+                state=session_models.StateSessionEnum.REFUSE,
+                stream_condition=session_models.StreamConditionEnum.CONTINUE,
+                session_mark=session_mark,
+            )
+            async for response in stub.ConditionSessionStream(iter((request,))):
+                _logger.warning(f"details = {response}")
+                return MessageToJson(response)
+
+    except Exception as ex:
+        _logger.error(ex, "<<<<<<<")
+        pass
+
+
 @app.get("/healthcheck")
 def healthcheck():
     """

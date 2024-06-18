@@ -17,6 +17,10 @@ class SessionStore:
     def get_session(self, key: str):
         return self._sessions.get(key)
 
+    def refuse_session(self, key: str) -> int:
+        self._sessions.pop(key, None)
+        self.__delete_cache(key)
+
     def update_cache(self, key, value):
         self.__delete_cache(key)
         self.__set_cache(key, value)
